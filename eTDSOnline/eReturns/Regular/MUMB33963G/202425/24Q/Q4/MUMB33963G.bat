@@ -1,0 +1,1 @@
+start javaw -jar D:\Saibex\TDS\20042024 Apr\eTDSOnline\eReturns\TDS_STANDALONE_FVU.jar "D:\Saibex\TDS\20042024 Apr\eTDSOnline\eReturns\Regular\MUMB33963G\202425\24Q\Q4\24QQ4.txt" "D:\Saibex\TDS\20042024 Apr\eTDSOnline\eReturns\Regular\MUMB33963G\202425\24Q\Q4\24QQ4.err" "D:\Saibex\TDS\20042024 Apr\eTDSOnline\eReturns\Regular\MUMB33963G\202425\24Q\Q4\24QQ4.fvu" "0" "8.6" "1" ""

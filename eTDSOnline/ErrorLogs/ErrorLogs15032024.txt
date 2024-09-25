@@ -1,0 +1,552 @@
+Time: 15/03/2024 09:25:05 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_26Q()
+Filename: d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 399
+Column: 13
+Message: Exception has been thrown by the target of an invocation.
+StackTrace:    at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   at System.Web.UI.DataBinder.GetIndexedPropertyValue(Object container, String expr)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at System.Web.UI.DataBinder.Eval(Object container, String expression)
+   at System.Web.UI.TemplateControl.Eval(String expression)
+   at ASP.admin_ereturns_nonsalary_aspx.__DataBinding__control366(Object sender, EventArgs e) in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx:line 1825
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at Admin_EReturns_NonSalary.check4Validation_26Q() in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 331
+Source: mscorlib
+TargetSite: System.Object InvokeMethod(System.Object, System.Object[], System.Signature, Boolean)
+-----------------inner Exception----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exception Type : ArgumentException
+Error Message : Payment Date is neither a DataColumn nor a DataRelation for table Table5.
+Error Source : System.Data
+Error Trace :    at System.Data.DataRowView.get_Item(String property)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 15/03/2024 09:25:53 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_26Q()
+Filename: d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 399
+Column: 13
+Message: Exception has been thrown by the target of an invocation.
+StackTrace:    at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   at System.Web.UI.DataBinder.GetIndexedPropertyValue(Object container, String expr)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at System.Web.UI.DataBinder.Eval(Object container, String expression)
+   at System.Web.UI.TemplateControl.Eval(String expression)
+   at ASP.admin_ereturns_nonsalary_aspx.__DataBinding__control366(Object sender, EventArgs e) in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx:line 1825
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at Admin_EReturns_NonSalary.check4Validation_26Q() in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 331
+Source: mscorlib
+TargetSite: System.Object InvokeMethod(System.Object, System.Object[], System.Signature, Boolean)
+-----------------inner Exception----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exception Type : ArgumentException
+Error Message : Payment Date is neither a DataColumn nor a DataRelation for table Table5.
+Error Source : System.Data
+Error Trace :    at System.Data.DataRowView.get_Item(String property)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 15/03/2024 09:33:02 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_26Q()
+Filename: d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 399
+Column: 13
+Message: Exception has been thrown by the target of an invocation.
+StackTrace:    at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   at System.Web.UI.DataBinder.GetIndexedPropertyValue(Object container, String expr)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at System.Web.UI.DataBinder.Eval(Object container, String expression)
+   at System.Web.UI.TemplateControl.Eval(String expression)
+   at ASP.admin_ereturns_nonsalary_aspx.__DataBinding__control366(Object sender, EventArgs e) in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx:line 1825
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at Admin_EReturns_NonSalary.check4Validation_26Q() in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 331
+Source: mscorlib
+TargetSite: System.Object InvokeMethod(System.Object, System.Object[], System.Signature, Boolean)
+-----------------inner Exception----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exception Type : ArgumentException
+Error Message : Payment Date is neither a DataColumn nor a DataRelation for table Table5.
+Error Source : System.Data
+Error Trace :    at System.Data.DataRowView.get_Item(String property)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 15/03/2024 09:36:34 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_26Q()
+Filename: d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 399
+Column: 13
+Message: Exception has been thrown by the target of an invocation.
+StackTrace:    at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   at System.Web.UI.DataBinder.GetIndexedPropertyValue(Object container, String expr)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at System.Web.UI.DataBinder.Eval(Object container, String expression)
+   at System.Web.UI.TemplateControl.Eval(String expression)
+   at ASP.admin_ereturns_nonsalary_aspx.__DataBinding__control366(Object sender, EventArgs e) in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx:line 1825
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at Admin_EReturns_NonSalary.check4Validation_26Q() in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 331
+Source: mscorlib
+TargetSite: System.Object InvokeMethod(System.Object, System.Object[], System.Signature, Boolean)
+-----------------inner Exception----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exception Type : ArgumentException
+Error Message : Payment Date is neither a DataColumn nor a DataRelation for table Table5.
+Error Source : System.Data
+Error Trace :    at System.Data.DataRowView.get_Item(String property)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 15/03/2024 09:37:42 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_26Q()
+Filename: d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 399
+Column: 13
+Message: Exception has been thrown by the target of an invocation.
+StackTrace:    at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   at System.Web.UI.DataBinder.GetIndexedPropertyValue(Object container, String expr)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at System.Web.UI.DataBinder.Eval(Object container, String expression)
+   at System.Web.UI.TemplateControl.Eval(String expression)
+   at ASP.admin_ereturns_nonsalary_aspx.__DataBinding__control380(Object sender, EventArgs e) in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx:line 1839
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at Admin_EReturns_NonSalary.check4Validation_26Q() in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 331
+Source: mscorlib
+TargetSite: System.Object InvokeMethod(System.Object, System.Object[], System.Signature, Boolean)
+-----------------inner Exception----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exception Type : ArgumentException
+Error Message : Amount_Paid is neither a DataColumn nor a DataRelation for table Table5.
+Error Source : System.Data
+Error Trace :    at System.Data.DataRowView.get_Item(String property)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 15/03/2024 09:38:59 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_26Q()
+Filename: d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 399
+Column: 13
+Message: Exception has been thrown by the target of an invocation.
+StackTrace:    at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   at System.Web.UI.DataBinder.GetIndexedPropertyValue(Object container, String expr)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at System.Web.UI.DataBinder.Eval(Object container, String expression)
+   at System.Web.UI.TemplateControl.Eval(String expression)
+   at ASP.admin_ereturns_nonsalary_aspx.__DataBinding__control380(Object sender, EventArgs e) in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx:line 1839
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at Admin_EReturns_NonSalary.check4Validation_26Q() in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 331
+Source: mscorlib
+TargetSite: System.Object InvokeMethod(System.Object, System.Object[], System.Signature, Boolean)
+-----------------inner Exception----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exception Type : ArgumentException
+Error Message : Amount_Paid is neither a DataColumn nor a DataRelation for table Table5.
+Error Source : System.Data
+Error Trace :    at System.Data.DataRowView.get_Item(String property)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 15/03/2024 09:39:52 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_26Q()
+Filename: d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 399
+Column: 13
+Message: Exception has been thrown by the target of an invocation.
+StackTrace:    at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   at System.Web.UI.DataBinder.GetIndexedPropertyValue(Object container, String expr)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at System.Web.UI.DataBinder.Eval(Object container, String expression)
+   at System.Web.UI.TemplateControl.Eval(String expression)
+   at ASP.admin_ereturns_nonsalary_aspx.__DataBinding__control387(Object sender, EventArgs e) in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx:line 1846
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at Admin_EReturns_NonSalary.check4Validation_26Q() in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 331
+Source: mscorlib
+TargetSite: System.Object InvokeMethod(System.Object, System.Object[], System.Signature, Boolean)
+-----------------inner Exception----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exception Type : ArgumentException
+Error Message : TDS_Amount is neither a DataColumn nor a DataRelation for table Table5.
+Error Source : System.Data
+Error Trace :    at System.Data.DataRowView.get_Item(String property)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 15/03/2024 09:43:25 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_26Q()
+Filename: d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 399
+Column: 13
+Message: Exception has been thrown by the target of an invocation.
+StackTrace:    at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   at System.Web.UI.DataBinder.GetIndexedPropertyValue(Object container, String expr)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at System.Web.UI.DataBinder.Eval(Object container, String expression)
+   at System.Web.UI.TemplateControl.Eval(String expression)
+   at ASP.admin_ereturns_nonsalary_aspx.__DataBinding__control387(Object sender, EventArgs e) in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx:line 1846
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at Admin_EReturns_NonSalary.check4Validation_26Q() in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 331
+Source: mscorlib
+TargetSite: System.Object InvokeMethod(System.Object, System.Object[], System.Signature, Boolean)
+-----------------inner Exception----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exception Type : ArgumentException
+Error Message : TDS_Amount is neither a DataColumn nor a DataRelation for table Table5.
+Error Source : System.Data
+Error Trace :    at System.Data.DataRowView.get_Item(String property)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 15/03/2024 09:45:39 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_26Q()
+Filename: d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 399
+Column: 13
+Message: Exception has been thrown by the target of an invocation.
+StackTrace:    at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   at System.Web.UI.DataBinder.GetIndexedPropertyValue(Object container, String expr)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at System.Web.UI.DataBinder.Eval(Object container, String expression)
+   at System.Web.UI.TemplateControl.Eval(String expression)
+   at ASP.admin_ereturns_nonsalary_aspx.__DataBinding__control373(Object sender, EventArgs e) in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx:line 1832
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at Admin_EReturns_NonSalary.check4Validation_26Q() in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 331
+Source: mscorlib
+TargetSite: System.Object InvokeMethod(System.Object, System.Object[], System.Signature, Boolean)
+-----------------inner Exception----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exception Type : ArgumentException
+Error Message : Deductee Name is neither a DataColumn nor a DataRelation for table Table5.
+Error Source : System.Data
+Error Trace :    at System.Data.DataRowView.get_Item(String property)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 15/03/2024 09:50:17 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_26Q()
+Filename: d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 399
+Column: 13
+Message: Exception has been thrown by the target of an invocation.
+StackTrace:    at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   at System.Web.UI.DataBinder.GetIndexedPropertyValue(Object container, String expr)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at System.Web.UI.DataBinder.Eval(Object container, String expression)
+   at System.Web.UI.TemplateControl.Eval(String expression)
+   at ASP.admin_ereturns_nonsalary_aspx.__DataBinding__control373(Object sender, EventArgs e) in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx:line 1832
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at Admin_EReturns_NonSalary.check4Validation_26Q() in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 331
+Source: mscorlib
+TargetSite: System.Object InvokeMethod(System.Object, System.Object[], System.Signature, Boolean)
+-----------------inner Exception----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exception Type : ArgumentException
+Error Message : Deductee Name is neither a DataColumn nor a DataRelation for table Table5.
+Error Source : System.Data
+Error Trace :    at System.Data.DataRowView.get_Item(String property)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 15/03/2024 09:50:32 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_26Q()
+Filename: d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 385
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_EReturns_NonSalary.check4Validation_26Q() in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 340
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 15/03/2024 09:50:32 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnProcessnow_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 1768
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at Admin_EReturns_NonSalary.check4Validation_26Q() in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 387
+   at Admin_EReturns_NonSalary.btnSubmit_Click(Object sender, EventArgs e) in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 246
+   at Admin_EReturns_NonSalary.btnProcessnow_Click(Object sender, EventArgs e) in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 1764
+Source: App_Web_aprqcvgy
+TargetSite: Void check4Validation_26Q()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 15/03/2024 09:52:26 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_26Q()
+Filename: d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 385
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_EReturns_NonSalary.check4Validation_26Q() in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 340
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 15/03/2024 09:52:26 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnProcessnow_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 1768
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at Admin_EReturns_NonSalary.check4Validation_26Q() in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 387
+   at Admin_EReturns_NonSalary.btnSubmit_Click(Object sender, EventArgs e) in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 246
+   at Admin_EReturns_NonSalary.btnProcessnow_Click(Object sender, EventArgs e) in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 1764
+Source: App_Web_aprqcvgy
+TargetSite: Void check4Validation_26Q()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+

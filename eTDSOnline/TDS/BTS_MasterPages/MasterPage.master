@@ -1,0 +1,800 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPages_MasterPage" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit"
+    TagPrefix="cc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>eTDS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../BTStrp/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link href="../BTStrp/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css" />
+    <link href="../BTStrp/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css" />
+    <link href="../BTStrp/icons/material/styles.min.css" rel="stylesheet" type="text/css" />
+    <link href="../BTStrp/css/adminlte.min.css" rel="stylesheet" type="text/css" />
+    <link href="../BTStrp/css/colors.min.css" rel="stylesheet" type="text/css" />
+    <link href="../BTStrp/css/spinkit.css" rel="stylesheet" type="text/css" />
+    <link href="../BTStrp/css/components.css" rel="stylesheet" type="text/css" />
+
+    <link rel="Stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
+
+    <%--  Code Added By SathishRam On 25-Feb-2023 add active class and stay opened when selected--%>
+    <style type="text/css">
+        .menu-active {
+            background-color: #fff !important;
+            color: #307D7E !important;
+            border-radius: 8px;
+        }
+    </style>
+
+
+
+    <!-- Core JS files -->
+    <script src="../BTStrp/js/jquery.min.js" type="text/javascript"></script>
+    <script src="../BTStrp/js/bootstrap.bundle.js" type="text/javascript"></script>
+    <script src="../BTStrp/js/adminlte.js" type="text/javascript"></script>
+    <script src="../BTStrp/js/blockui.min.js" type="text/javascript"></script>
+    <script src="../BTStrp/js/pnotify.min.js" type="text/javascript"></script>
+    <script src="../BTStrp/js/noty.min.js" type="text/javascript"></script>
+    <script src="../BTStrp/js/PopupAlert.js" type="text/javascript"></script>
+    <script src="../BTStrp/js/select2.min.js" type="text/javascript"></script>
+
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+            $("[id*=btnRefresh]").hide();
+            $("[id*=btnyr]").hide();
+            Get_Company(0);
+            Get_PanNo(0);
+            $('.MastermodalBackground3').css("display", "none");
+            $("[id*=spUsr]").html($("[id*=hdnusername]").val());
+            $("[id*=ddlCompanyName]").change(function () {
+                var compid = $("[id*=ddlCompanyName]").val();
+                $("[id*=hdnCompid]").val(compid);
+                $("[id*=btnRefresh]").click();
+            });
+
+            $("[id*=ddlFinancialYear]").change(function () {
+                var ids = $("[id*=ddlFinancialYear]").val();
+                var Yr = $("#ddlFinancialYear option:selected").text();
+                $("[id*=hdnIds]").val(ids);
+                $("[id*=hdnYr]").val(Yr);
+                $("[id*=btnyr]").click();
+
+                var parts = Yr.split('_');
+                var selectedYear = parseInt(parts[1], 10);
+
+                //if (selectedYear > 24) {
+                //    window.location.href = "../../TDS/Regular/Dashboard.aspx";
+                //} else {
+                //    window.location.href = "../../Admin/Dashboards.aspx";
+                //}
+            });
+
+            $("[id*=btnCtctus]").click(function () {
+                $("[id*=myModal]").show();
+            });
+
+            $("[id*=closeCUS]").click(function () {
+                $("[id*=myModal]").hide();
+            });
+
+            //App.initBeforeLoad();
+            //App.initCore();
+            //App.initAfterLoad();
+
+            $("#imgPhoto").attr('src', "../../TDS/BTStrp/image/logo.jpg");
+
+            $('.sidebar-mini').addClass('sidebar-closed sidebar-collapse');
+
+            $("[id*=btnAddComp]").click(function () {
+                window.location.href = 'CompanyMaster.aspx';
+            });
+
+            /** Code Added By SathishRam On 25-Feb-2023 add active class and stay opened when selected */
+            var url = window.location;
+            // for sidebar menu entirely but not cover treeview
+            $('ul.nav-sidebar a').filter(function () {
+                return this.href == url;
+            }).parent().children().addClass('menu-active');
+
+            // for treeview
+            $('ul.nav-treeview a').filter(function () {
+                return this.href == url;
+            }).parentsUntil(".nav-sidebar > .nav-treeview").addClass('menu-open');
+
+        });
+
+
+
+        function DeleteConfirmation(objectName) {
+            if (confirm("Are you sure want to delete " + objectName + "?"))
+                return true;
+
+            return false;
+        }
+
+        function ActionConfirmation(objectName) {
+            if (confirm("Are you sure want to " + objectName + " ?"))
+                return true;
+
+            return false;
+        }
+
+        function checkAll(objRef) {
+            var dgAddition = objRef.parentNode.parentNode.parentNode;
+            var inputList = dgAddition.getElementsByTagName("input");
+
+            for (var i = 0; i < inputList.length; i++) {
+                var row = inputList[i].parentNode.parentNode;
+
+                if (inputList[i].type == "checkbox" && objRef != inputList[i]) {
+
+                    if (objRef.checked) {
+                        inputList[i].checked = true;
+                    }
+
+                    else {
+                        inputList[i].checked = false;
+                    }
+                }
+            }
+        }
+
+        function Get_PanNo(temp) {
+            var a = temp;
+            var compid = 0;
+            if (a == 0) {
+                compid = $("[id*=hdnCompid]").val();
+            }
+            else {
+                compid = temp;
+            }
+            $.ajax({
+                type: "POST",
+                url: "../../TDS/BTStrp/Handler/Ws_PanNo.asmx/GetPanNo",
+                data: '{compid:' + compid + '}',
+                dataType: 'json',
+                contentType: "application/json; charset=utf-8",
+                success: function (msg) {
+                    var myList = jQuery.parseJSON(msg.d);
+                    if (myList == null) {
+                    }
+                    else {
+                        if (myList.length > 0) {
+                            var tan = myList[0].panno;
+                            $("[id*=txtTanNo]").val(tan);
+                        }
+
+                    }
+                },
+                failure: function (response) {
+                    alert('Cant Connect to Server' + response.d);
+                },
+                error: function (response) {
+                    alert('Error Occoured ' + response.d);
+                }
+            });
+        }
+
+        function Get_Company(temp) {
+            var a = temp;
+            var compid = 0;
+            if (a == 0) {
+                compid = $("[id*=hdnCompid]").val();
+            }
+            else {
+                compid = temp;
+            }
+
+            Blockloadershow();
+
+            $.ajax({
+                type: "POST",
+                url: "../../TDS/BTStrp/Handler/Company.asmx/Get_Company",
+                data: '{compid:' + compid + '}',
+                dataType: 'json',
+                contentType: "application/json; charset=utf-8",
+                success: function (msg) {
+                    var myList = jQuery.parseJSON(msg.d);
+                    var LstFy = myList[0].Lst_Fy;
+                    if (myList == null) {
+                    }
+                    else {
+                        if (myList.length > 0) {
+                            for (var i = 0; i < myList.length; i++) {
+                                $("[id*=ddlCompanyName]").append("<option value='" + myList[i].Company_ID + "'>" + myList[i].CompanyName + "</option>");
+                            }
+
+                        }
+                        if (LstFy.length > 0) {
+                            for (var i = 0; i < LstFy.length; i++) {
+                                $("[id*=ddlFinancialYear]").append("<option value='" + LstFy[i].Finyear_id + "'>" + LstFy[i].Fyear + "</option>");
+                            }
+                        }
+                    }
+                    $("[id*=ddlCompanyName]").val(compid);
+                    //$("[id*=ddlCompanyName]").trigger('change');
+                    Blockloaderhide();
+                },
+                failure: function (response) {
+                    alert('Cant Connect to Server' + response.d);
+                    Blockloaderhide();
+                },
+                error: function (response) {
+                    alert('Error Occoured ' + response.d);
+                    Blockloaderhide();
+                }
+            });
+
+        }
+
+
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+
+</head>
+
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <form id="form1" runat="server">
+        <!-- Brand Logo -->
+        <asp:HiddenField ID="hdnCompid" runat="server" />
+        <asp:HiddenField ID="hdnusername" runat="server" />
+        <asp:HiddenField ID="hdnYr" runat="server" />
+        <asp:HiddenField ID="hdnIds" runat="server" />
+
+        <asp:ScriptManager ID="ScriptManager1" runat="server" AsyncPostBackTimeout="360000"
+            ScriptMode="Release">
+        </asp:ScriptManager>
+        <div class="wrapper">
+
+            <!-- Navbar -->
+            <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+
+                <!-- Left navbar links -->
+
+                <ul class="navbar-nav col-lg-11">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars" style="padding-top: 15px;"></i></a>
+
+                    <li class="col-lg-4" style="font-size: larger; font-weight: bold;">
+                        <select id="ddlCompanyName" name="ddlCompanyName" class="form-control select select2-hidden-accessible">
+                        </select>
+                    </li>
+                    <li class="col-lg-2">
+                        <input id="txtTanNo" name="txtTAN" type="text" class="form-control form-control-border " style="font-size: larger; font-weight: bold; text-align: center;" readonly />
+                    </li>
+                    <li class="col-lg-1.5" style="font-size: larger; font-weight: bold;">
+                        <select id="ddlFinancialYear" name="ddlFinancialYear" class="form-control select select2-hidden-accessible">
+                        </select>
+                    </li>
+                    &nbsp; &nbsp; &nbsp;
+                    <li class="col-lg-2">
+                        <button id="btnAddComp" name="btnAddComp" class="btn btn-outline-success" data-toggle="tooltip" title="Add Deductor / Company" type="button"><i class="fas fa-plus mr-1 fa-1x"></i>Deductor</button>
+                    </li>
+
+                    <li style="padding-top: 7px; margin-left: 34px;">
+                        <label style="font-size: larger;">FVU 8.4</label>
+                    </li>
+                    <li style="padding-top: 7px; margin-left: 15px;">
+                        <label style="font-size: larger;">- 01/09/2023</label></li>
+                </ul>
+                <%--<ul class="navbar-nav ml-md-auto">
+					                    <li class="nav-item"><span class="navbar-text ml-md-3 font-weight-bolder" style="font-size: 16px;" id="LoggedIN_">Welcome  Sanjay Pandya</span></li>
+                    <li class="nav-item">
+                        <a href="../default.aspx" class="navbar-nav-link legitRipple">
+                            <i class="icon-switch2"></i>
+                            <span class="d-md-none ml-2">Logout</span>
+                        </a>
+                    </li>
+                </ul>--%>
+                <!-- Right navbar links -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- Navbar Search -->
+                    <li class="nav-item">
+                        <asp:Button ID="btnRefresh" runat="server" CssClass="btn btn-navbar" Text="" OnClick="btnRefresh_Click"></asp:Button>
+                        <asp:Button ID="btnyr" runat="server" CssClass="btn btn-navbar" Text="" OnClick="btnyr_Click"></asp:Button>
+
+                        <%--<a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                  <i class="fas fa-search"></i>
+                </a>--%>
+                        <%--                <div class="navbar-search-block">
+                  <form class="form-inline">
+                    <div class="input-group input-group-sm">
+                      <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                      <div class="input-group-append">
+                        <button class="btn btn-navbar" type="submit">
+                          <i class="fas fa-search"></i>
+                        </button>
+                        <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                          <i class="fas fa-times"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>--%>
+                    </li>
+
+                    <span id="loginDtl" class=" font-weight-bold"></span>
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                            <i class="fas fa-expand-arrows-alt" style="padding-top: 10px;"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../login.aspx" class="navbar-nav-link legitRipple">
+                            <i class="icon-switch2" style="padding-top: 7px;"></i>
+                            <input id="BtnLgt" type="button" class="d-md-none ml-2" />
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /.navbar -->
+
+            <!-- Main Sidebar Container -->
+            <aside class="main-sidebar sidebar-dark-primary elevation-4">
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!-- Sidebar user panel (optional) -->
+                    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                        <div>
+                            <img class="img-circle elevation-2" alt="User Image" id="imgPhoto" />
+                        </div>
+                        <div class="info-1">
+                            <span id="loginDtls" class="d-block brand-text font-weight-light"></span>
+                            <span class="text text-white" style="padding-top: 12px;">Saibex Network</span>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Sidebar Menu -->
+                    <nav class="mt-2" id="divMnu">
+
+                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+                            <li class="nav-item"><a href="../Regular/Dashboard.aspx" class="nav-link">
+                                <i class="nav-icon mi-home mr-3 mi-2x"></i>
+                                <p>Dashboard</p>
+                            </a></li>
+
+                            <li class='nav-header' style="height: 32px; color: #FFD580;">
+                                <p>Non Salary</p>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="../Regular/DeducteeMaster.aspx" class="nav-link">
+                                    <i class="nav-icon far fa-user mr-3 fa-2x"></i>
+                                    <p>Deductee</p>
+                                </a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a href="../Regular/Deductions.aspx" class="nav-link">
+                                    <i class="nav-icon mi-attach-money mr-3 mi-2x"></i>
+                                    <p>Vouchers / Challan</p>
+                                </a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a href="../Regular/26QImportXL.aspx" class="nav-link">
+                                    <i class="nav-icon far fa-file-excel mr-3 fa-2x"></i>
+                                    <p>Import from Excel</p>
+                                </a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a href="../../Admin/EReturns_NonSalary.aspx" class="nav-link">
+                                    <i class="nav-icon far fa-file-archive mr-3 fa-2x"></i>
+                                    <p>Returns</p>
+                                </a>
+                            </li>
+
+                            <li class='nav-header' style="height: 32px; color: #FFD580;">
+                                <p>Salary</p>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a href="../Regular/Employee.aspx" class="nav-link">
+                                    <i class="nav-icon far fa-user mr-3 fa-2x"></i>
+                                    <p>Employee</p>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="../Regular/SalaryChallan.aspx" class="nav-link">
+                                    <i class="nav-icon mi-attach-money mr-3 mi-2x"></i>
+                                    <p>Challan Entry </p>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="../Regular/TdsComputationListing.aspx" class="nav-link">
+                                    <i class="nav-icon mi-attach-money mr-3 mi-2x"></i>
+                                    <p>Computation / Challan</p>
+                                </a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a href="../Regular/SalaryImport.aspx" class="nav-link">
+                                    <i class="nav-icon far fa-file-excel mr-3 fa-2x"></i>
+                                    <p>Import Salary- XL</p>
+                                </a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a href="../../Admin/EReturns_Salary.aspx" class="nav-link">
+                                    <i class="nav-icon far fa-file-archive mr-3 fa-2x"></i>
+                                    <p>Salary Returns</p>
+                                </a>
+                            </li>
+                            <%--                            <li  class='nav-header' style="height:32px; color:#FFD580;">                               
+                                <p>Configuration</p>
+                            </li>--%>
+                            <li class="nav-item ">
+                                <a href="../Correction/Import.aspx" class="nav-link">
+                                    <i class="nav-icon mi-laptop-mac mr-3 mi-2x"></i>
+                                    <p>Correction</p>
+                                </a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fab fa-r-project mr-3 fa-2x"></i>
+                                    <p>Reports<i class="fas fa-angle-left right"></i></p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item ">
+                                        <a href="#" class="nav-link">
+                                            <i class="nav-icon mi-time-to-leave mr-3 mi-2x"></i>
+                                            <p>Non Salary<i class="fas fa-angle-left right"></i></p>
+                                        </a>
+                                        <ul class="nav nav-treeview">
+
+                                            <li class="nav-item ">
+                                                <a href="#" class="nav-link">
+                                                    <p>Deductee</p>
+                                                </a>
+                                                <ul class="nav nav-treeview">
+                                                    <li class="nav-item ">
+                                                        <a href="../../Admin/DeducteeListReport.aspx" class="nav-link">
+                                                            <p>Deductee List</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item ">
+                                                        <a href="../../Admin/PANDetails.aspx" class="nav-link">
+                                                            <p>Deductee PAN List</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item ">
+                                                        <a href="../../Admin/DeducteeReport.aspx" class="nav-link">
+                                                            <p>Deductee Summary</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="../../Admin/Report_tdsregister.aspx" class="nav-link">
+                                                    <p>TDS Register</p>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="../../Admin/TDSSummaryReport.aspx" class="nav-link">
+                                                    <p>TDS Summary</p>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="../../Admin/Report_ChallanDetails.aspx" class="nav-link">
+                                                    <p>Challan Summary</p>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="../../Admin/Form16A.aspx" class="nav-link">
+                                                    <p>Form16A</p>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="#" class="nav-link">
+                                                    <p>Form26Q</p>
+                                                </a>
+                                                <ul class="nav nav-treeview">
+                                                    <li class="nav-item ">
+                                                        <a href="../../Admin/Report_Form26Q.aspx" class="nav-link">
+                                                            <p>Form 26Q</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item ">
+                                                        <a href="../../Admin/Form26Q_Annexure.aspx" class="nav-link">
+                                                            <p>Form26Q Annexure</p>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="#" class="nav-link">
+                                                    <p>Form27Q</p>
+                                                </a>
+                                                <ul class="nav nav-treeview">
+                                                    <li class="nav-item ">
+                                                        <a href="../../Admin/Report_Form27Q.aspx" class="nav-link">
+                                                            <p>Form 27Q</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item ">
+                                                        <a href="../../Admin/Report_Form27Q_Annexure.aspx" class="nav-link">
+                                                            <p>Form27Q Annexure</p>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+
+                                            <li class="nav-item ">
+                                                <a href="../../Admin/TDSSummaryReport.aspx" class="nav-link">
+                                                    <p>Form 27EQ</p>
+                                                </a>
+                                                <ul class="nav nav-treeview">
+                                                    <li class="nav-item ">
+                                                        <a href="../../Admin/Report_Form27EQ.aspx" class="nav-link">
+                                                            <p>Form 27EQ</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item ">
+                                                        <a href="../../Admin/ReportForm27EQ_Annexure.aspx" class="nav-link">
+                                                            <p>Form27EQ Annexure</p>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="../../Admin/Report_Form3CD.aspx" class="nav-link">
+                                                    <p>Form 3CD</p>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="../../Admin/TDSSummaryReport.aspx" class="nav-link">
+                                                    <p>Manual Challan</p>
+                                                </a>
+                                                <ul class="nav nav-treeview">
+                                                    <li class="nav-item ">
+                                                        <a href="../../Admin/NewManual_Challan280.aspx" class="nav-link">
+                                                            <p>Manual Challan 280</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item ">
+                                                        <a href="../../Admin/NewManual_Challan_Salary.aspx" class="nav-link">
+                                                            <p>Manual Challan 281</p>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a href="#" class="nav-link">
+                                            <i class="nav-icon mi-time-to-leave mr-3 mi-2x"></i>
+                                            <p>Salary<i class="fas fa-angle-left right"></i></p>
+                                        </a>
+                                        <ul class="nav nav-treeview">
+                                            <li class="nav-item ">
+                                                <a href="../../Admin/Report_tdsComputationStatement.aspx" class="nav-link">
+                                                    <p>Computation Statement</p>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="../../Admin/Report_Challan_Tax_DeductionStatement.aspx" class="nav-link">
+                                                    <p>Tax Deduction Summary</p>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="../../Admin/Report_Form16.aspx" class="nav-link">
+                                                    <p>Form16 - Part B</p>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="../../Admin/Report_Form16AA.aspx" class="nav-link">
+                                                    <p>Form16 AA</p>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="../../Admin/Report_From12BA.aspx" class="nav-link">
+                                                    <p>Form12BA</p>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="../../Admin/Report_EmployeeDetails.aspx" class="nav-link">
+                                                    <p>Employee Profile</p>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="../../Admin/Report_Employee_wiseTaxDeduction.aspx" class="nav-link">
+                                                    <p>Employeewise Tax Deduction</p>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="../../Admin/EmpPanDetails.aspx" class="nav-link">
+                                                    <p>Employee PAN List</p>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="../../Admin/ReportEmployeeDeductionDetails.aspx" class="nav-link">
+                                                    <p>Employee Challan Details</p>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item ">
+                                                <a href="#" class="nav-link">
+                                                    <p>Form 24Q</p>
+                                                </a>
+                                                <ul class="nav nav-treeview">
+                                                    <li class="nav-item ">
+                                                        <a href="../../Admin/Form24Q.aspx" class="nav-link">
+                                                            <p>Form24Q</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item ">
+                                                        <a href="../../Admin/Report_Form24Q_Annexure.aspx" class="nav-link">
+                                                            <p>Form24Q Annexure</p>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a href="#" class="nav-link">
+                                                    <p>Manual Challan<</p>
+                                                </a>
+                                                <ul class="nav nav-treeview">
+                                                    <li class="nav-item ">
+                                                        <a href="../../Admin/NewManual_Challan280.aspx" class="nav-link">
+                                                            <p>Manual Challan 280</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item ">
+                                                        <a href="../../Admin/NewManual_Challan_Salary.aspx" class="nav-link">
+                                                            <p>Manual Challan 281</p>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon mi-time-to-leave mr-3 mi-2x"></i>
+                                    <p>Traces<i class="fas fa-angle-left right"></i></p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item "><a href='../../TDS/Regular/TracesDetails.aspx' class="nav-link">
+                                        <i class="nav-icon far fa-file-archive mr-3 fa-2x"></i>
+                                        <p>Traces UserID/Password Details</i></p>
+                                        .
+                                    </a>
+                                    </li>
+                                    <li class="nav-item "><a href='../../TDS/Regular/TracesRequest.aspx' class="nav-link">
+                                        <i class="nav-icon far fa-file-archive mr-3 fa-2x"></i>
+                                        <p>Request for TDS / Conso file Online</p>
+                                    </a>
+                                    </li>
+                                    <li class="nav-item "><a href='../../TDS/Regular/TracesRequest.aspx?rt=FORM16A' class="nav-link">
+                                        <i class="nav-icon far fa-file-archive mr-3 fa-2x"></i>
+                                        <p>Request for Form 16A</p>
+                                    </a>
+                                    </li>
+                                    <li class="nav-item "><a href='../../TDS/Regular/TracesRequest.aspx?rt=FORM16' class="nav-link">
+                                        <i class="nav-icon far fa-file-archive mr-3 fa-2x"></i>
+                                        <p>Request for Form 16 - Part A</p>
+                                    </a>
+                                    </li>
+                                    <li class="nav-item "><a href='../../TDS/Regular/TracesRequest.aspx?rt=FORM27D' class="nav-link">
+                                        <i class="nav-icon far fa-file-archive mr-3 fa-2x"></i>
+                                        <p>Request for Form 27D</p>
+                                    </a>
+                                    </li>
+                                    <li class="nav-item "><a href='../../TDS/Regular/TracesRequest.aspx?rt=DEFAULT' class="nav-link">
+                                        <i class="nav-icon far fa-file-archive mr-3 fa-2x"></i>
+                                        <p>Request for Defaults / Justification Report</p>
+                                    </a>
+                                    </li>
+                                    <li class="nav-item "><a href='../../TDS/Regular/TracesDownloadReport.aspx' class="nav-link">
+                                        <i class="nav-icon far fa-file-archive mr-3 fa-2x"></i>
+                                        <p>Download Reports</p>
+                                    </a>
+                                    </li>
+                                    <li class="nav-item "><a href='../../TDS/Regular/Traces_StatementStatus.aspx' class="nav-link">
+                                        <i class="nav-icon far fa-file-archive mr-3 fa-2x"></i>
+                                        <p>Statement Status</p>
+                                    </a>
+                                    </li>
+                                    <li class="nav-item "><a href='../../TDS/Regular/Traces_DefaultSummary.aspx' class="nav-link">
+                                        <i class="nav-icon far fa-file-archive mr-3 fa-2x"></i>
+                                        <p>Default Summary</p>
+                                    </a>
+                                    </li>
+                                    <li class="nav-item "><a href='../../TDS/Regular/Traces_TDS_TCS_Credit.aspx' class="nav-link">
+                                        <i class="nav-icon far fa-file-archive mr-3 fa-2x"></i>
+                                        <p>View TDS and TCS Credit</p>
+                                    </a>
+                                    </li>
+                                    <li class="nav-item "><a href='../../TDS/Regular/197certiverfication.aspx' class="nav-link">
+                                        <i class="nav-icon far fa-file-archive mr-3 fa-2x"></i>
+                                        <p>Request 197A Certificate></p>
+                                    </a>
+                                    </li>
+                                    <li class="nav-item "><a href='../../TDS/Regular/PANVerify.aspx' class="nav-link">
+                                        <i class="nav-icon far fa-file-archive mr-3 fa-2x"></i>
+                                        <p>PAN Verify</p>
+                                    </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a href="../Regular/CompanyMaster.aspx" class="nav-link">
+                                    <i class="nav-icon icon-profile mr-3 icon-2x"></i>
+                                    <p>Company Profile</p>
+                                </a>
+                            </li>
+
+                            <%--<li class="nav-item ">
+                                <a href="../Regular/CompanyMaster.aspx" class="nav-link">
+                                    <i class="nav-icon icon-profile mr-3 icon-2x"></i>
+                                    <p>Backup</p>
+                                </a>
+                                </li>--%>
+
+                            <li class="nav-item ">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon mi-time-to-leave mr-3 mi-2x"></i>
+                                    <p>Utilities<i class="fas fa-angle-left right"></i></p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                </ul>
+                            </li>
+
+
+
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </aside>
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                <asp:ContentPlaceHolder ID="MasterPage" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <!-- /.content-wrapper -->
+
+            <!-- /Footer -->
+
+            <!-- /Footer -->
+        </div>
+
+        <footer class="main-footer">
+            <strong>Powered by  &copy; <a href="https://saibex.co.in/" target="_blank">Saibex Network</a>.</strong>
+            All rights reserved.
+ 
+                <div id="dvSupport" class="float-right">
+                    <b>Support:9892606006 / 9372893410</b>&nbsp;&nbsp;&nbsp;<a href="https://api.whatsapp.com/send?phone=9892606006" target="_blank" onclick="showText">
+                        <img style="width: 157px;" src="../../TDS/BTStrp/image/WhatsappChatNow.png" alt="WhatsApp" title="How may I help you?"></a>
+                </div>
+
+        </footer>
+
+    </form>
+
+
+</body>
+</html>

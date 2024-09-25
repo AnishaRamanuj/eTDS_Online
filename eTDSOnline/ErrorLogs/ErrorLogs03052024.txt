@@ -1,0 +1,90 @@
+Time: 03/05/2024 02:10:19 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Int32 DAL_SaveEmployeeComputation(CommonLibrary.Tbl_TDS_SaveComputation)
+Filename: d:\Saibex\TDS\Merged 30042024 Apr\eTDSOnline\App_Code\DAL\DAL_TDSComputation.cs.cs
+Line: 262
+Column: 17
+Message: Procedure or function usp_Update_TDS_Computation has too many arguments specified.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.ApplicationBlocks1.Data.SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) in d:\Saibex\TDS\Merged 30042024 Apr\eTDSOnline\App_Code\DAL\SQLHelper.cs:line 337
+   at Microsoft.ApplicationBlocks1.Data.SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) in d:\Saibex\TDS\Merged 30042024 Apr\eTDSOnline\App_Code\DAL\SQLHelper.cs:line 253
+   at DataLayer.DAL_TDSComputation.DAL_SaveEmployeeComputation(Tbl_TDS_SaveComputation tobj) in d:\Saibex\TDS\Merged 30042024 Apr\eTDSOnline\App_Code\DAL\DAL_TDSComputation.cs.cs:line 257
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 03/05/2024 02:11:48 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Int32 DAL_SaveEmployeeComputation(CommonLibrary.Tbl_TDS_SaveComputation)
+Filename: d:\Saibex\TDS\Merged 30042024 Apr\eTDSOnline\App_Code\DAL\DAL_TDSComputation.cs.cs
+Line: 262
+Column: 17
+Message: Procedure or function usp_Update_TDS_Computation has too many arguments specified.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.ApplicationBlocks1.Data.SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) in d:\Saibex\TDS\Merged 30042024 Apr\eTDSOnline\App_Code\DAL\SQLHelper.cs:line 337
+   at Microsoft.ApplicationBlocks1.Data.SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) in d:\Saibex\TDS\Merged 30042024 Apr\eTDSOnline\App_Code\DAL\SQLHelper.cs:line 253
+   at DataLayer.DAL_TDSComputation.DAL_SaveEmployeeComputation(Tbl_TDS_SaveComputation tobj) in d:\Saibex\TDS\Merged 30042024 Apr\eTDSOnline\App_Code\DAL\DAL_TDSComputation.cs.cs:line 257
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 03/05/2024 02:13:16 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Int32 DAL_SaveEmployeeComputation(CommonLibrary.Tbl_TDS_SaveComputation)
+Filename: d:\Saibex\TDS\Merged 30042024 Apr\eTDSOnline\App_Code\DAL\DAL_TDSComputation.cs.cs
+Line: 262
+Column: 17
+Message: Procedure or function usp_Update_TDS_Computation has too many arguments specified.
+StackTrace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.ApplicationBlocks1.Data.SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) in d:\Saibex\TDS\Merged 30042024 Apr\eTDSOnline\App_Code\DAL\SQLHelper.cs:line 337
+   at Microsoft.ApplicationBlocks1.Data.SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) in d:\Saibex\TDS\Merged 30042024 Apr\eTDSOnline\App_Code\DAL\SQLHelper.cs:line 253
+   at DataLayer.DAL_TDSComputation.DAL_SaveEmployeeComputation(Tbl_TDS_SaveComputation tobj) in d:\Saibex\TDS\Merged 30042024 Apr\eTDSOnline\App_Code\DAL\DAL_TDSComputation.cs.cs:line 257
+Source: .Net SqlClient Data Provider
+TargetSite: Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 03/05/2024 02:13:45 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Company ID: 
+Method Name: Void Page_Load(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\Merged 30042024 Apr\eTDSOnline\Admin\ManageTdsComputation.aspx.cs
+Line: 60
+Column: 13
+Message: Object reference not set to an instance of an object.
+StackTrace:    at Admin_TDSComputation.Page_Load(Object sender, EventArgs e) in d:\Saibex\TDS\Merged 30042024 Apr\eTDSOnline\Admin\ManageTdsComputation.aspx.cs:line 44
+Source: App_Web_qo5eh0vf
+TargetSite: Void Page_Load(System.Object, System.EventArgs)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+

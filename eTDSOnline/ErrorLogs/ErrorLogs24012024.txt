@@ -1,0 +1,30 @@
+Time: 24/01/2024 04:32:27 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_26Q()
+Filename: d:\Saibex\TDS\11012024\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 398
+Column: 13
+Message: String or binary data would be truncated.
+StackTrace:    at BusinessLayer.BAL_EReturns_NonSalary.BAL_GetNonSalaryEreturnsDetails() in D:\Saibex\TDS\11012024\Buisnesslayer\BAL_EReturns_NonSalary.cs:line 52
+   at Admin_EReturns_NonSalary.check4Validation_26Q() in d:\Saibex\TDS\11012024\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 266
+Source: .Net SqlClient Data Provider
+TargetSite: System.Data.DataSet BAL_GetNonSalaryEreturnsDetails()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 24/01/2024 04:33:02 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_26Q()
+Filename: d:\Saibex\TDS\11012024\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 398
+Column: 13
+Message: String or binary data would be truncated.
+StackTrace:    at BusinessLayer.BAL_EReturns_NonSalary.BAL_GetNonSalaryEreturnsDetails() in D:\Saibex\TDS\11012024\Buisnesslayer\BAL_EReturns_NonSalary.cs:line 52
+   at Admin_EReturns_NonSalary.check4Validation_26Q() in d:\Saibex\TDS\11012024\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 266
+Source: .Net SqlClient Data Provider
+TargetSite: System.Data.DataSet BAL_GetNonSalaryEreturnsDetails()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+

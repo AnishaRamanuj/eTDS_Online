@@ -1,0 +1,113 @@
+Time: 25/01/2024 10:55:43 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnAddnew_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\11012024\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs
+Line: 196
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_ManageSalary_ChallanList.btnAddnew_Click(Object sender, EventArgs e) in d:\Saibex\TDS\11012024\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs:line 191
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 25/01/2024 10:59:56 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnAddnew_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\11012024\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs
+Line: 196
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_ManageSalary_ChallanList.btnAddnew_Click(Object sender, EventArgs e) in d:\Saibex\TDS\11012024\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs:line 191
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 25/01/2024 11:16:45 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void EditMode(System.String)
+Filename: d:\Saibex\TDS\11012024\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs
+Line: 652
+Column: 17
+Message: Cannot find column FirstName.
+StackTrace:    at System.Data.DataTable.ParseSortString(String sortString)
+   at System.Data.DataView.CheckSort(String sort)
+   at System.Data.DataView.set_Sort(String value)
+   at Forms._ManageChallan_Salary.EditMode(String ID) in d:\Saibex\TDS\11012024\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs:line 624
+Source: System.Data
+TargetSite: System.Data.IndexField[] ParseSortString(System.String)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 25/01/2024 11:17:46 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void EditMode(System.String)
+Filename: d:\Saibex\TDS\11012024\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs
+Line: 652
+Column: 17
+Message: Cannot find column FirstName.
+StackTrace:    at System.Data.DataTable.ParseSortString(String sortString)
+   at System.Data.DataView.CheckSort(String sort)
+   at System.Data.DataView.set_Sort(String value)
+   at Forms._ManageChallan_Salary.EditMode(String ID) in d:\Saibex\TDS\11012024\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs:line 624
+Source: System.Data
+TargetSite: System.Data.IndexField[] ParseSortString(System.String)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 25/01/2024 11:28:04 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnExprecd_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\11012024\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs
+Line: 828
+Column: 17
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at Forms._ManageChallan_Salary.DumpExcel(DataTable tbl) in d:\Saibex\TDS\11012024\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs:line 882
+   at Forms._ManageChallan_Salary.btnExprecd_Click(Object sender, EventArgs e) in d:\Saibex\TDS\11012024\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs:line 818
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 25/01/2024 06:18:49 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void Page_Load(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\11012024\eTDSOnline\SuperAdmin\AdminMaster.master.cs
+Line: 38
+Column: 17
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Admin_AdminMaster.Page_Load(Object sender, EventArgs e) in d:\Saibex\TDS\11012024\eTDSOnline\SuperAdmin\AdminMaster.master.cs:line 33
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+

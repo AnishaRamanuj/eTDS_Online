@@ -1,0 +1,139 @@
+Time: 14/03/2024 11:10:50 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnAddnew_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs
+Line: 207
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_ManageSalary_ChallanList.btnAddnew_Click(Object sender, EventArgs e) in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs:line 202
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 14/03/2024 11:11:12 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnExprecd_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs
+Line: 837
+Column: 17
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at Forms._ManageChallan_Salary.DumpExcel(DataTable tbl) in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs:line 891
+   at Forms._ManageChallan_Salary.btnExprecd_Click(Object sender, EventArgs e) in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs:line 827
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 14/03/2024 11:22:59 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnAddnew_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs
+Line: 207
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_ManageSalary_ChallanList.btnAddnew_Click(Object sender, EventArgs e) in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs:line 202
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 14/03/2024 11:29:21 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnAddnew_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs
+Line: 207
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_ManageSalary_ChallanList.btnAddnew_Click(Object sender, EventArgs e) in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs:line 202
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 14/03/2024 11:47:12 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnAddnew_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs
+Line: 207
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_ManageSalary_ChallanList.btnAddnew_Click(Object sender, EventArgs e) in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs:line 202
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 14/03/2024 11:51:29 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnAddnew_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs
+Line: 207
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_ManageSalary_ChallanList.btnAddnew_Click(Object sender, EventArgs e) in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs:line 202
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 14/03/2024 12:36:26 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnAddnew_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs
+Line: 207
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_ManageSalary_ChallanList.btnAddnew_Click(Object sender, EventArgs e) in d:\Saibex\TDS\13032024 Mar\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs:line 202
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+

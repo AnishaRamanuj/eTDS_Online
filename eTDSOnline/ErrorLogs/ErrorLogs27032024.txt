@@ -1,0 +1,36 @@
+Time: 27/03/2024 09:57:29 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_26Q()
+Filename: d:\Saibex\TDS\19032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 387
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_EReturns_NonSalary.check4Validation_26Q() in d:\Saibex\TDS\19032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 342
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 27/03/2024 09:57:29 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnProcessnow_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\19032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 1781
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at Admin_EReturns_NonSalary.check4Validation_26Q() in d:\Saibex\TDS\19032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 389
+   at Admin_EReturns_NonSalary.btnSubmit_Click(Object sender, EventArgs e) in d:\Saibex\TDS\19032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 248
+   at Admin_EReturns_NonSalary.btnProcessnow_Click(Object sender, EventArgs e) in d:\Saibex\TDS\19032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 1777
+Source: App_Web_3410xtxm
+TargetSite: Void check4Validation_26Q()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+

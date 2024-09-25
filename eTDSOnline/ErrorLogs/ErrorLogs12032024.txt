@@ -1,0 +1,108 @@
+Time: 12/03/2024 10:22:01 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_26Q()
+Filename: d:\Saibex\TDS\09032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 399
+Column: 13
+Message: Exception has been thrown by the target of an invocation.
+StackTrace:    at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   at System.Web.UI.DataBinder.GetIndexedPropertyValue(Object container, String expr)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at System.Web.UI.DataBinder.Eval(Object container, String expression)
+   at System.Web.UI.TemplateControl.Eval(String expression)
+   at ASP.admin_ereturns_nonsalary_aspx.__DataBinding__control370(Object sender, EventArgs e) in d:\Saibex\TDS\09032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx:line 1815
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at Admin_EReturns_NonSalary.check4Validation_26Q() in d:\Saibex\TDS\09032024 Mar\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 331
+Source: mscorlib
+TargetSite: System.Object InvokeMethod(System.Object, System.Object[], System.Signature, Boolean)
+-----------------inner Exception----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exception Type : ArgumentException
+Error Message : Payment Date is neither a DataColumn nor a DataRelation for table Table5.
+Error Source : System.Data
+Error Trace :    at System.Data.DataRowView.get_Item(String property)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 12/03/2024 10:22:06 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnAddnew26Q_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\09032024 Mar\eTDSOnline\Admin\ManageNonSalary_ChallanList.aspx.cs
+Line: 342
+Column: 11
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_ManageSalary_ChallanList.btnAddnew26Q_Click(Object sender, EventArgs e) in d:\Saibex\TDS\09032024 Mar\eTDSOnline\Admin\ManageNonSalary_ChallanList.aspx.cs:line 339
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 12/03/2024 02:16:19 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnAddnew26Q_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\09032024 Mar\eTDSOnline\Admin\ManageNonSalary_ChallanList.aspx.cs
+Line: 342
+Column: 11
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_ManageSalary_ChallanList.btnAddnew26Q_Click(Object sender, EventArgs e) in d:\Saibex\TDS\09032024 Mar\eTDSOnline\Admin\ManageNonSalary_ChallanList.aspx.cs:line 339
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 12/03/2024 02:18:01 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnAddnew_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\09032024 Mar\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs
+Line: 207
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_ManageSalary_ChallanList.btnAddnew_Click(Object sender, EventArgs e) in d:\Saibex\TDS\09032024 Mar\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs:line 202
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+

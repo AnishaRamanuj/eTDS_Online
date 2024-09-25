@@ -1,0 +1,87 @@
+Time: 22/01/2024 04:10:36 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnExprecd_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\11012024\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs
+Line: 817
+Column: 17
+Message: Object reference not set to an instance of an object.
+StackTrace:    at Forms._ManageChallan_Salary.btnExprecd_Click(Object sender, EventArgs e) in d:\Saibex\TDS\11012024\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs:line 805
+Source: App_Web_vxm3gm0j
+TargetSite: Void btnExprecd_Click(System.Object, System.EventArgs)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 22/01/2024 04:11:25 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnAddnew_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\11012024\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs
+Line: 196
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_ManageSalary_ChallanList.btnAddnew_Click(Object sender, EventArgs e) in d:\Saibex\TDS\11012024\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs:line 191
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 22/01/2024 04:18:35 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnExprecd_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\11012024\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs
+Line: 817
+Column: 17
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at Forms._ManageChallan_Salary.DumpExcel(DataTable tbl) in d:\Saibex\TDS\11012024\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs:line 871
+   at Forms._ManageChallan_Salary.btnExprecd_Click(Object sender, EventArgs e) in d:\Saibex\TDS\11012024\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs:line 807
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 22/01/2024 04:19:08 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnExprecd_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\11012024\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs
+Line: 817
+Column: 17
+Message: Object reference not set to an instance of an object.
+StackTrace:    at Forms._ManageChallan_Salary.btnExprecd_Click(Object sender, EventArgs e) in d:\Saibex\TDS\11012024\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs:line 805
+Source: App_Web_vxm3gm0j
+TargetSite: Void btnExprecd_Click(System.Object, System.EventArgs)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 22/01/2024 04:19:29 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnAddnew_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\11012024\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs
+Line: 196
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_ManageSalary_ChallanList.btnAddnew_Click(Object sender, EventArgs e) in d:\Saibex\TDS\11012024\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs:line 191
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+

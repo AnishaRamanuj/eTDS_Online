@@ -1,0 +1,268 @@
+Time: 11/01/2024 11:47:36 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_27EQ()
+Filename: d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 667
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_EReturns_NonSalary.check4Validation_27EQ() in d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 640
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 11/01/2024 11:47:36 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnProcessnow_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 1801
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at Admin_EReturns_NonSalary.check4Validation_27EQ() in d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 669
+   at Admin_EReturns_NonSalary.btnSubmit_Click(Object sender, EventArgs e) in d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 254
+   at Admin_EReturns_NonSalary.btnProcessnow_Click(Object sender, EventArgs e) in d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 1797
+Source: App_Web_nung3wko
+TargetSite: Void check4Validation_27EQ()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 11/01/2024 12:06:56 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_27EQ()
+Filename: d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 667
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_EReturns_NonSalary.check4Validation_27EQ() in d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 640
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 11/01/2024 12:06:56 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnProcessnow_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 1801
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at Admin_EReturns_NonSalary.check4Validation_27EQ() in d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 669
+   at Admin_EReturns_NonSalary.btnSubmit_Click(Object sender, EventArgs e) in d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 254
+   at Admin_EReturns_NonSalary.btnProcessnow_Click(Object sender, EventArgs e) in d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 1797
+Source: App_Web_ub05dpuv
+TargetSite: Void check4Validation_27EQ()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 11/01/2024 12:07:29 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_27EQ()
+Filename: d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 667
+Column: 13
+Message: Column 'TANNo' does not belong to table Table.
+StackTrace:    at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at Admin_EReturns_NonSalary.check4Validation_27EQ() in d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 544
+Source: System.Data
+TargetSite: System.Data.DataColumn GetDataColumn(System.String)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 11/01/2024 12:07:44 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_27EQ()
+Filename: d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 667
+Column: 13
+Message: Column 'TANNo' does not belong to table Table.
+StackTrace:    at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at Admin_EReturns_NonSalary.check4Validation_27EQ() in d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 544
+Source: System.Data
+TargetSite: System.Data.DataColumn GetDataColumn(System.String)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 11/01/2024 12:11:01 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_27EQ()
+Filename: d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 667
+Column: 13
+Message: Column 'TANNo' does not belong to table Table.
+StackTrace:    at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at Admin_EReturns_NonSalary.check4Validation_27EQ() in d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 544
+Source: System.Data
+TargetSite: System.Data.DataColumn GetDataColumn(System.String)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 11/01/2024 12:13:06 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_27EQ()
+Filename: d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 667
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_EReturns_NonSalary.check4Validation_27EQ() in d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 640
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 11/01/2024 12:13:06 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnProcessnow_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 1801
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at Admin_EReturns_NonSalary.check4Validation_27EQ() in d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 669
+   at Admin_EReturns_NonSalary.btnSubmit_Click(Object sender, EventArgs e) in d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 254
+   at Admin_EReturns_NonSalary.btnProcessnow_Click(Object sender, EventArgs e) in d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 1797
+Source: App_Web_ub05dpuv
+TargetSite: Void check4Validation_27EQ()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 11/01/2024 12:25:29 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnAddnew26Q_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\16102023\eTDSOnline\Admin\ManageNonSalary_ChallanList.aspx.cs
+Line: 348
+Column: 11
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_ManageSalary_ChallanList.btnAddnew26Q_Click(Object sender, EventArgs e) in d:\Saibex\TDS\16102023\eTDSOnline\Admin\ManageNonSalary_ChallanList.aspx.cs:line 345
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 11/01/2024 12:30:10 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnAddnew26Q_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\16102023\eTDSOnline\Admin\ManageNonSalary_ChallanList.aspx.cs
+Line: 348
+Column: 11
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_ManageSalary_ChallanList.btnAddnew26Q_Click(Object sender, EventArgs e) in d:\Saibex\TDS\16102023\eTDSOnline\Admin\ManageNonSalary_ChallanList.aspx.cs:line 345
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 11/01/2024 12:31:31 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_27EQ()
+Filename: d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 667
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_EReturns_NonSalary.check4Validation_27EQ() in d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 606
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 11/01/2024 12:31:31 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnProcessnow_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 1801
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at Admin_EReturns_NonSalary.check4Validation_27EQ() in d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 669
+   at Admin_EReturns_NonSalary.btnSubmit_Click(Object sender, EventArgs e) in d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 254
+   at Admin_EReturns_NonSalary.btnProcessnow_Click(Object sender, EventArgs e) in d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 1797
+Source: App_Web_ub05dpuv
+TargetSite: Void check4Validation_27EQ()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 11/01/2024 12:41:57 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_27EQ()
+Filename: d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 667
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_EReturns_NonSalary.check4Validation_27EQ() in d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 606
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 11/01/2024 12:41:57 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnProcessnow_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 1801
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at Admin_EReturns_NonSalary.check4Validation_27EQ() in d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 669
+   at Admin_EReturns_NonSalary.btnSubmit_Click(Object sender, EventArgs e) in d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 254
+   at Admin_EReturns_NonSalary.btnProcessnow_Click(Object sender, EventArgs e) in d:\Saibex\TDS\16102023\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 1797
+Source: App_Web_ub05dpuv
+TargetSite: Void check4Validation_27EQ()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+

@@ -1,0 +1,399 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body
+{
+    /*background: #d6ecbb;*/
+    font-size: .80em;
+    font-family: Arial, "Helvetica Neue" , "Lucida Grande" , "Segoe UI" , Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #292929;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldsetTable
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid White;
+}
+
+fieldsetTable p
+{
+    margin: 2px 12px 10px 10px;
+}
+
+
+legendTable
+{
+    font-size: 1.1em;
+    padding: 2px 4px 2px 2px;
+    font: bold 13px verdana, arial, "Trebuchet MS" , sans-serif;
+}
+
+fieldset
+{
+    margin: 0.5em 0px;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+}
+
+fieldset p
+{
+    margin: 2px 4px 3px 3px;
+}
+
+
+legend
+{
+    font-size: 1.1em;
+    padding: 2px 4px 2px 2px;
+    font: bold 13px verdana, arial, "Trebuchet MS" , sans-serif;
+}
+
+/*Menual Style*/
+
+.cssHeader
+{
+    /*background-image:url(../Images/header-bg.jpg);*/
+    background-color: #eeeeee;
+    background-repeat: repeat-x;
+}
+
+/*content css*/
+
+.cssPageTitle
+{
+    font: bold 14px verdana, arial, "Trebuchet MS" , sans-serif;
+    border-bottom: 2px solid #0b9322;
+    padding: 7px;
+    color: #0b9322;
+}
+
+.cssPageTitle2
+{
+    font: bold 14px verdana, arial, "Trebuchet MS" , sans-serif;
+    /*border-bottom: 2px solid #0b9322;*/
+    padding: 7px;
+    color: #0b9322;
+}
+.cssPageContent
+{
+    padding: 0px 25px 0px 25px;
+}
+
+.cssTable
+{
+    font: normal 12px verdana, arial, "Trebuchet MS" , sans-serif;
+    border: 1px solid #dbdbdb;
+}
+
+.cssCellHeader
+{
+    font: normal 16px verdana, arial, "Trebuchet MS" , sans-serif; /*background-color: #7e2345;*/
+    background-image: url(../Images/ButtonImage1.png);
+    padding: 7px;
+    color: White;
+}
+
+.cssGridHeader
+{
+    font: normal 12px verdana, arial, "Trebuchet MS" , sans-serif;
+    background-color: #f3f3f3;
+    font-weight: bold;
+    height: 32px;
+}
+
+.cssGridItemStyle
+{
+    font: normal 12px verdana, arial, "Trebuchet MS" , sans-serif;
+    background-color: #fefefe;
+    height: 28px;
+}
+
+.cssGridItemStyle:hover
+{
+    background-color: #f7f7f7;
+}
+
+.cssGridAlternatingItemStyle
+{
+    font: normal 12px verdana, arial, "Trebuchet MS" , sans-serif;
+    background-color: #fefefe;
+    height: 28px;
+}
+.cssGridAlternatingItemStyle:hover
+{
+    background-color: #f7f7f7;
+}
+
+.cssLabelHeaderTitle
+{
+    font: normal 25px verdana, arial, "Trebuchet MS" , sans-serif;
+}
+
+.cssLabelHeader
+{
+    font: bold 15px verdana, arial, "Trebuchet MS" , sans-serif;
+}
+
+.cssLabelHighlight
+{
+    font: normal 16px verdana, arial, "Trebuchet MS" , sans-serif;
+    color: #316c6b;
+}
+
+.cssLabel
+{
+    font: normal 12px verdana, arial, "Trebuchet MS" , sans-serif;
+}
+
+.cssLabelCompletedPercentage
+{
+    font: normal 12px verdana, arial, "Trebuchet MS" , sans-serif;
+    height: 20px;
+    color: #3365cc;
+    background-color: #3365cc;
+}
+
+.cssLabelUnCompletedPercentage
+{
+    font: normal 12px verdana, arial, "Trebuchet MS" , sans-serif;
+    height: 20px;
+    color: #dc3a12;
+    background-color: #dc3a12;
+}
+
+.cssRequiredFieldValidator
+{
+    font: normal 12px verdana, arial, "Trebuchet MS" , sans-serif;
+    color: Red;
+}
+
+.cssTextbox
+{
+    font: normal 12px verdana, arial, "Trebuchet MS" , sans-serif;
+    height: 25px;
+    border-radius: 4px;
+    border: 1px solid #b5b5b5;
+}
+
+.cssTextboxRed
+{
+    font: normal 12px verdana, arial, "Trebuchet MS" , sans-serif;
+    height: 25px;
+    border-radius: 4px;
+    border: 1px solid #FF5733;
+}
+.cssTextboxLong
+{
+    font: normal 12px verdana, arial, "Trebuchet MS" , sans-serif;
+    width: 350px;
+    height: 25px;
+    border-radius: 4px;
+    border: 1px solid #b5b5b5;
+}
+.cssTextbox:focus
+{
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    padding: 3px 0px 3px 3px;
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.cssTextbox:hover
+{
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.cssTextboxInt
+{
+    font: normal 12px verdana, arial, "Trebuchet MS" , sans-serif;
+    height: 25px;
+    text-align: right;
+    border-radius: 4px;
+    border: 1px solid #b5b5b5;
+    padding-right: 5px;
+}
+
+.cssTextboxInt:focus
+{
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    padding-right: 5px;
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.cssTextboxInt:hover
+{
+    padding-right: 5px;
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+
+.cssDropDownList
+{
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+    border: 1px solid #b5b5b5;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-family: verdana, arial, "Trebuchet MS", sans-serif;
+}
+
+.cssDropDownList:focus
+{
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    padding: 3px 0px 3px 3px;
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.cssDropDownList:hover
+{
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.cssRequiredFieldValidator
+{
+    font: normal 12px verdana, arial, "Trebuchet MS" , sans-serif;
+    color: Red;
+}
+
+.cssButton
+{
+    cursor: pointer; /*background-image: url(../Images/ButtonBG1.png);*/
+    background-color: #d3d3d3;
+    border: 0px;
+    padding: 4px 15px 4px 15px;
+    color: Black;
+    border: 1px solid #c4c5c6;
+    border-radius: 3px;
+    font: bold 12px verdana, arial, "Trebuchet MS" , sans-serif;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.cssButton:focus
+{
+    background-color: #69b506;
+    border: 1px solid #3f6b03;
+    color: White;
+    opacity: 0.8;
+}
+.cssButton:hover
+{
+    background-color: #69b506;
+    border: 1px solid #3f6b03;
+    color: White;
+    opacity: 0.8;
+}
+
+.cssBrandButton
+{
+    /*background-color: #7e2345;*/
+    background-image: url(../Images/CarBranchIcon1.png);
+    font-weight: normal;
+    padding: 2px 4px 2px 4px;
+    color: White;
+    border: 1px solid #878686;
+    border-radius: 4px;
+    font: bold 13px verdana, arial, "Trebuchet MS" , sans-serif;
+    text-decoration: none;
+}
+
+.cssBrandButton:hover
+{
+    /*background-color: #60b7b5;*/
+    background-image: url(../Images/CarBranchIcon2.png);
+}
+
+.cssFeedbackError
+{
+    padding: 8px;
+    font: normal 12px verdana, arial, "Trebuchet MS" , sans-serif;
+    background-color: #feebeb;
+    color: #df0000;
+    border: 1px solid #ffaeae;
+}
+
+.cssFeedbackSuccess
+{
+    padding: 8px;
+    font: normal 12px verdana, arial, "Trebuchet MS" , sans-serif;
+    background-color: #eaf7d9;
+    color: #1b7607;
+    border: 1px solid #c1e298;
+}
+
+.cssFeedbackWorning
+{
+    padding: 8px;
+    font: normal 12px verdana, arial, "Trebuchet MS" , sans-serif;
+    background-color: #faf9c9;
+    color: #b49452;
+    border: 1px solid #b59655;
+}
+
+.cssEditDeleteImage
+{
+    opacity: 0.7;
+}
+.cssEditDeleteImage:hover
+{
+    opacity: 1;
+}
+
+.cssTDLeft
+{
+    border: 1px solid #c5c5c5;
+    text-align: left;
+}
+
+.cssTDCenter
+{
+    border: 1px solid #c5c5c5;
+    text-align: center;
+}
+.cssCheckBox
+{
+}
+.cssCheckBox:focus
+{
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.cssCheckBox:hover
+{
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+
+.GridPager1 a, .GridPager1 span
+{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+.GridPager1 a
+{
+    background-color: #f5f5f5;
+    color: #969696;
+    border: 1px solid #969696;
+}
+.GridPager1 span
+{
+    background-color: #A1DCF2;
+    color: #000;
+    border: 1px solid #3AC0F2;
+}

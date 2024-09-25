@@ -1,0 +1,20 @@
+Time: 06/05/2024 09:50:37 AM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void ddlFinancialYear_OnTextChanged(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\Merged 30042024 Apr\eTDSOnline\MasterPages\MasterPage.master.cs
+Line: 258
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at MasterPages_MasterPage.ddlFinancialYear_OnTextChanged(Object sender, EventArgs e) in d:\Saibex\TDS\Merged 30042024 Apr\eTDSOnline\MasterPages\MasterPage.master.cs:line 254
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+

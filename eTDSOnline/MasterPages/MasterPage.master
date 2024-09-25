@@ -1,0 +1,392 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPages_MasterPage" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit"
+    TagPrefix="cc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>eTDS</title>
+    <link href="../Styles/MasterPage.css" rel="Stylesheet" type="text/css" />
+    <link href="../Styles/Masters.css" rel="Stylesheet" type="text/css" />
+    <%--<link href="../Styles/masterpage11.css" rel="Stylesheet" type="text/css" />--%>
+    <link href="../styles/TimesheetInput.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/stylesheet.css" rel="Stylesheet" type="text/css" />
+    <link href="../menu/ddlevelsmenu-base.css" rel="stylesheet" type="text/css" />
+    <link href="../menu/ddlevelsmenu-sidebar.css" rel="stylesheet" type="text/css" />
+    <link href="../menu/ddlevelsmenu-topbar.css" rel="stylesheet" type="text/css" />
+    <script src="../menu/ddlevelsmenu.js" type="text/javascript"></script>
+    <link rel="icon" type="image/png" href="../Images/favicon.png" />
+    <link type="text/css" href="../DatePicker/css/jquery-ui-1.8.12.custom.css" rel="stylesheet" />
+    <script type="text/javascript" src="../DatePicker/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="../DatePicker/js/jquery-ui-1.8.19.custom.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+            Get_PanNo(0);
+            $('.MastermodalBackground3').css("display", "none");
+            $("[id*=ddlCompanyName]").change(function () {
+                var compid = $("[id*=ddlCompanyName]").val();
+                Get_PanNo(compid);
+
+            });
+
+            $("[id*=ddlFinancialYear]").change(function () { $('.MastermodalBackground2').css("display", "block"); });
+
+            $("[id*=btnCtctus]").click(function () {
+                $("[id*=myModal]").show();
+            });
+
+            $("[id*=closeCUS]").click(function () {
+                $("[id*=myModal]").hide();
+            });
+
+        });
+
+        function DeleteConfirmation(objectName) {
+            if (confirm("Are you sure want to delete " + objectName + "?"))
+                return true;
+
+            return false;
+        }
+
+        function ActionConfirmation(objectName) {
+            if (confirm("Are you sure want to " + objectName + " ?"))
+                return true;
+
+            return false;
+        }
+
+        function checkAll(objRef) {
+            var dgAddition = objRef.parentNode.parentNode.parentNode;
+            var inputList = dgAddition.getElementsByTagName("input");
+
+            for (var i = 0; i < inputList.length; i++) {
+                var row = inputList[i].parentNode.parentNode;
+
+                if (inputList[i].type == "checkbox" && objRef != inputList[i]) {
+
+                    if (objRef.checked) {
+                        inputList[i].checked = true;
+                    }
+
+                    else {
+                        inputList[i].checked = false;
+                    }
+                }
+            }
+        }
+
+        function Get_PanNo(temp) {
+            var a = temp;
+            var compid = 0;
+            if (a == 0) {
+                compid = $("[id*=hdnCompid]").val();
+            }
+            else {
+                compid = temp;
+            }
+            $.ajax({
+                type: "POST",
+                url: "../Handler/Ws_PanNo.asmx/GetPanNo",
+                data: '{compid:' + compid + '}',
+                dataType: 'json',
+                contentType: "application/json; charset=utf-8",
+                success: function (msg) {
+                    var myList = jQuery.parseJSON(msg.d);
+                    if (myList == null) {
+                    }
+                    else {
+                        if (myList.length > 0) {
+                            var tan = myList[0].panno;
+                            $("[id*=txtTanNo]").val(tan);
+                        }
+
+                    }
+                },
+                failure: function (response) {
+                    alert('Cant Connect to Server' + response.d);
+                },
+                error: function (response) {
+                    alert('Error Occoured ' + response.d);
+                }
+            });
+        }
+
+
+    </script>
+    <style type="text/css">
+        .MastermodalBackground2 {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            background-color: rgba(0,0,0,.3);
+            display: none;
+            z-index: 999;
+            cursor: wait;
+        }
+
+        .mastermodalPopup {
+            margin: 400px auto auto auto;
+            width: 55px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: White;
+            background-position: center;
+        }
+
+        .mastermodalPopup1 {
+            margin: 400px auto auto auto;
+            width: 55px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: White;
+            background-position: center;
+        }
+
+        .bottom {
+            width: 100%;
+            clear: both;
+            background-color: #A8A8A8;
+            font-size: 11px;
+            margin: 10px auto 0;
+            font-family: Verdana;
+            vertical-align: middle;
+            color: White;
+            padding: 5px 0;
+        }
+
+        .whats {
+            cursor: pointer;
+            background-color: #69b506;
+            border: 0px;
+            padding: 4px 15px 4px 15px;
+            border: 1px solid #3f6b03;
+            color: White;
+            border-radius: 3px;
+            font: bold 12px verdana, arial, "Trebuchet MS", sans-serif;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+
+        /*Contact US Modal Popup */
+        .modalContactUs {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        /* The Close Button */
+        .closeModelCUS {
+            color: red;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+            .closeModelCUS:hover,
+            .closeModelCUS:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+    </style>
+</head>
+<body style="cursor: inherit;">
+    <div class="MastermodalBackground2">
+        <div class="mastermodalPopup">
+            <table align="center">
+                <tr>
+                    <td>
+                        <center class="safsdfsdf">
+                            <img src="../Images/loader.gif" style="background-color: transparent" width="45"
+                                height="45" />
+                        </center>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <form style="width: 98%; margin: 0px auto 0px auto;" id="form1" runat="server">
+        <script type="text/javascript">
+            var prm = Sys.WebForms.PageRequestManager.getInstance();
+            //Raised before processing of an asynchronous postback starts and the postback request is sent to the server.
+            prm.add_beginRequest(BeginRequestHandler);
+            // Raised after an asynchronous postback is finished and control has been returned to the browser.
+            prm.add_endRequest(EndRequestHandler);
+
+            // prm.add_pageLoaded(BeginRequestHandler);
+            //   prm.remove_pageLoaded(EndRequestHandler);
+
+            function BeginRequestHandler(sender, args) {
+                //Shows the modal popup - the update progress
+                $('.MastermodalBackground2').css("display", "block");
+                $('.MastermodalBackground2').fadeIn(0);
+            }
+
+            function EndRequestHandler(sender, args) {
+                //Hide the modal popup - the update progress
+                $('.MastermodalBackground2').css("display", "none");
+            }
+        </script>
+        <asp:ScriptManager ID="ScriptManager1" AsyncPostBackTimeout="360000" runat="server"
+            ScriptMode="Release">
+        </asp:ScriptManager>
+        <asp:HiddenField ID="hdnCompid" runat="server" />
+        <div class="main" style="width: 100%;">
+            <div class="top" style="width: 100%;">
+                <asp:HiddenField ID="hdnMasterPageID" runat="server" ClientIDMode="Static" />
+                <div class="top_box" style="width: 100%;">
+                    <%-- <div ></div>--%>
+                    <div class="topbg2" style="width: 100%;">
+                        <div>
+                            <table width="100%">
+                                <tr>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <img alt="" id="cmpnylogo" visible="true" height="35" width="150" runat="server"
+                                        src="~/Images/SaibexLogo.jpeg" />
+                                    </td>
+                                    <td colspan="2" style="padding-top: 10px;" valign="top">
+                                        <table align="center">
+                                            <tr>
+                                                <td height="20px">
+                                                    <label id="Label8" runat="server" class="cssLabel" style="font-size: medium; font-weight: bold;">Support Number : 9892606006, 9372893410, 9004466888, 9819458606</label>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td style="text-align: right">
+                                        <input type="button" id="btnCtctus" name="btnCtctus" class="cssButton" value="Contact Us" runat="server" />
+                                        <%--<input type="button" class="whats" value="What's New" runat="server" onclick="window.location.href = 'WhatsNew.aspx'" />--%>
+                                        <asp:Button Text="Logout" ID="lnklogin" CssClass="cssButton" OnClick="lnklogin_Click" UseSubmitBehavior="False"
+                                            runat="server" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="userinfo">
+                            <div class="Font12px">
+                                <table width="100%">
+                                    <tr>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <asp:DropDownList ID="ddlCompanyName" CssClass="cssDropDownList" AutoPostBack="true"
+                                                            Style="cursor: pointer;" runat="server" Width="400px" Height="27px" OnSelectedIndexChanged="ddlCompanyName_SelectedIndexChanged"
+                                                            Font-Bold="True">
+                                                        </asp:DropDownList>
+                                                    </td>
+                                                    <td>
+                                                        <asp:TextBox ID="txtTanNo" runat="server" CssClass="cssTextbox" Width="100px" ReadOnly="true"></asp:TextBox>
+                                                    </td>
+                                                    <td>
+                                                        <asp:DropDownList ID="ddlFinancialYear" Height="27px" CssClass="cssDropDownList"
+                                                            Style="cursor: pointer;" runat="server" Width="100px" Font-Bold="True" OnTextChanged="ddlFinancialYear_OnTextChanged"
+                                                            AutoPostBack="true">
+                                                        </asp:DropDownList>
+                                                    </td>
+                                                    <td style="color: red; padding-top: 10px;">FUV : 8.5
+                                                    </td>
+                                                    <td></td>
+                                                    <td style="padding-top: 10px;">Rel. Dt : 16/03/2024
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td style="text-align: right; padding-top: 15px;">
+                                            <asp:Label ID="ltrMaster" runat="server" ForeColor="#1464F4" Visible="False"></asp:Label>
+                                            <div class="userinfonew" style="font-family: Verdana;">
+                                                <asp:Label runat="server" ID="lblwelcome" Text="Welcome " CssClass="color85-85-85"
+                                                    Font-Size="15px"></asp:Label>
+                                                <asp:LinkButton ID="lnkusrname" Font-Bold="true" runat="server" OnClick="lnkusrname_Click"
+                                                    ForeColor="#1464F4" Font-Size="15px" Font-Underline="False"></asp:LinkButton>
+                                                <%--                                                <asp:Label runat="server" ID="lblusr" Text="User" CssClass="color85-85-85" Font-Size="12px"></asp:Label>
+                                                <asp:Label runat="server" ID="lblrole" Text="Admin" Font-Bold="true" ForeColor="#1464F4"
+                                                    Font-Size="12px"></asp:Label>--%>
+                                                <asp:Literal ID="lblrole_Accstat" runat="server" Visible="false"></asp:Literal>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ddtopmenubar" class="mattblackmenu">
+                        <asp:Literal ID="LiteralMainMenu" runat="server"></asp:Literal>
+                    </div>
+                    <script type="text/javascript">
+                        //                        ddlevelsmenu.setup("ddtopmenubar", "topbar");
+                        ddlevelsmenu.setup("ddtopmenubar", "topbar")
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="clearall">
+        </div>
+        <div id="CompanyChange">
+        </div>
+        <div class="login_box">
+            <div class="login3_box">
+                <div class="masterwhole">
+                    <div class="masterrhtwhle Font12px">
+                        <%--<div style ="height:5px"></div>--%>
+                        <asp:ContentPlaceHolder ID="MasterPage" runat="server">
+                        </asp:ContentPlaceHolder>
+                        <div class="clearall">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearall">
+            </div>
+        </div>
+        <div class="bottom" align="right">
+            <asp:Label align="right" CssClass="verticalalign" Text="Powered by ©" runat="server"
+                ID="lblfooter"></asp:Label>&nbsp;&nbsp;
+        <asp:Label ID="Label1" CssClass="verticalaligns" Style="color: black;" Text="Saibex Network. All rights reserved." runat="server"></asp:Label>
+        </div>
+        <div class="clearall">
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modalContactUs">
+
+            <!-- Modal content -->
+
+            <%--<span id="closeCUS" class="closeModelCUS">&times;</span>--%>
+
+            <center>
+                <div style="padding-left: 25%; padding-right: 25%;">
+                    <span id="closeCUS" class="closeModelCUS">&times;</span>
+                    <img src="../Images/ContactUs.JPG" style="background-color: transparent" width="650"
+                        height="600" />
+                </div>
+
+
+            </center>
+
+
+        </div>
+
+    </form>
+
+
+</body>
+</html>

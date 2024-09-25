@@ -1,0 +1,310 @@
+Time: 26/04/2024 03:19:27 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void ddlFinancialYear_OnTextChanged(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\20042024 Apr\eTDSOnline\MasterPages\MasterPage.master.cs
+Line: 247
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at MasterPages_MasterPage.ddlFinancialYear_OnTextChanged(Object sender, EventArgs e) in d:\Saibex\TDS\20042024 Apr\eTDSOnline\MasterPages\MasterPage.master.cs:line 243
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 26/04/2024 03:19:34 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnAddnew_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs
+Line: 207
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_ManageSalary_ChallanList.btnAddnew_Click(Object sender, EventArgs e) in d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs:line 202
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 26/04/2024 03:19:56 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void BindEmployeeGrid()
+Filename: d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs
+Line: 156
+Column: 17
+Message: Object reference not set to an instance of an object.
+StackTrace:    at Forms._ManageChallan_Salary.BindEmployeeGrid() in d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs:line 143
+Source: App_Web_dkqhh5ka
+TargetSite: Void BindEmployeeGrid()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 26/04/2024 03:20:07 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnAddnew_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs
+Line: 207
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_ManageSalary_ChallanList.btnAddnew_Click(Object sender, EventArgs e) in d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs:line 202
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 26/04/2024 03:22:14 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void BindEmployeeGrid()
+Filename: d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs
+Line: 156
+Column: 17
+Message: Object reference not set to an instance of an object.
+StackTrace:    at Forms._ManageChallan_Salary.BindEmployeeGrid() in d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs:line 143
+Source: App_Web_dkqhh5ka
+TargetSite: Void BindEmployeeGrid()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 26/04/2024 03:22:19 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnAddnew_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs
+Line: 207
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_ManageSalary_ChallanList.btnAddnew_Click(Object sender, EventArgs e) in d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs:line 202
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 26/04/2024 03:22:33 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void BindEmployeeGrid()
+Filename: d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs
+Line: 156
+Column: 17
+Message: Object reference not set to an instance of an object.
+StackTrace:    at Forms._ManageChallan_Salary.BindEmployeeGrid() in d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs:line 143
+Source: App_Web_dkqhh5ka
+TargetSite: Void BindEmployeeGrid()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 26/04/2024 03:22:39 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnAddnew_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs
+Line: 207
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_ManageSalary_ChallanList.btnAddnew_Click(Object sender, EventArgs e) in d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs:line 202
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 26/04/2024 03:24:26 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void BindEmployeeGrid()
+Filename: d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs
+Line: 157
+Column: 17
+Message: Object reference not set to an instance of an object.
+StackTrace:    at Forms._ManageChallan_Salary.BindEmployeeGrid() in d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_Challan.aspx.cs:line 144
+Source: App_Web_tofvstr1
+TargetSite: Void BindEmployeeGrid()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 26/04/2024 03:24:58 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void ddlFinancialYear_OnTextChanged(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\20042024 Apr\eTDSOnline\MasterPages\MasterPage.master.cs
+Line: 247
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at MasterPages_MasterPage.ddlFinancialYear_OnTextChanged(Object sender, EventArgs e) in d:\Saibex\TDS\20042024 Apr\eTDSOnline\MasterPages\MasterPage.master.cs:line 243
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 26/04/2024 03:25:04 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnAddnew_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs
+Line: 207
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_ManageSalary_ChallanList.btnAddnew_Click(Object sender, EventArgs e) in d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs:line 202
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 26/04/2024 03:26:46 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnAddnew_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs
+Line: 207
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_ManageSalary_ChallanList.btnAddnew_Click(Object sender, EventArgs e) in d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs:line 202
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 26/04/2024 03:29:01 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void BindEmployeeGrid()
+Filename: 
+Line: 0
+Column: 0
+Message: Object reference not set to an instance of an object.
+StackTrace:    at Forms._ManageChallan_Salary.BindEmployeeGrid()
+Source: App_Web_1gh13lex
+TargetSite: Void BindEmployeeGrid()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 26/04/2024 03:29:37 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void ddlFinancialYear_OnTextChanged(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\20042024 Apr\eTDSOnline\MasterPages\MasterPage.master.cs
+Line: 247
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at MasterPages_MasterPage.ddlFinancialYear_OnTextChanged(Object sender, EventArgs e) in d:\Saibex\TDS\20042024 Apr\eTDSOnline\MasterPages\MasterPage.master.cs:line 243
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 26/04/2024 03:29:43 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnAddnew_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs
+Line: 207
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_ManageSalary_ChallanList.btnAddnew_Click(Object sender, EventArgs e) in d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs:line 202
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 26/04/2024 03:29:52 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnAddnew_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs
+Line: 207
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   at Admin_ManageSalary_ChallanList.btnAddnew_Click(Object sender, EventArgs e) in d:\Saibex\TDS\20042024 Apr\eTDSOnline\Admin\ManageSalary_ChallanList.aspx.cs:line 202
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Time: 26/04/2024 05:57:04 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void ddlFinancialYear_OnTextChanged(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\20042024 Apr\eTDSOnline\MasterPages\MasterPage.master.cs
+Line: 247
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at MasterPages_MasterPage.ddlFinancialYear_OnTextChanged(Object sender, EventArgs e) in d:\Saibex\TDS\20042024 Apr\eTDSOnline\MasterPages\MasterPage.master.cs:line 243
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+

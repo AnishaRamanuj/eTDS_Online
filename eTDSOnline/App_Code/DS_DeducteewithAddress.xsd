@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_DeducteewithAddress" targetNamespace="http://tempuri.org/DS_DeducteewithAddress.xsd" xmlns:mstns="http://tempuri.org/DS_DeducteewithAddress.xsd" xmlns="http://tempuri.org/DS_DeducteewithAddress.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_DeducteewithAddress" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DS_DeducteewithAddress" msprop:Generator_UserDSName="DS_DeducteewithAddress">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DT_DeducteewithAddress" msprop:Generator_TableClassName="DT_DeducteewithAddressDataTable" msprop:Generator_TableVarName="tableDT_DeducteewithAddress" msprop:Generator_RowChangedName="DT_DeducteewithAddressRowChanged" msprop:Generator_TablePropName="DT_DeducteewithAddress" msprop:Generator_RowDeletingName="DT_DeducteewithAddressRowDeleting" msprop:Generator_RowChangingName="DT_DeducteewithAddressRowChanging" msprop:Generator_RowEvHandlerName="DT_DeducteewithAddressRowChangeEventHandler" msprop:Generator_RowDeletedName="DT_DeducteewithAddressRowDeleted" msprop:Generator_RowClassName="DT_DeducteewithAddressRow" msprop:Generator_UserTableName="DT_DeducteewithAddress" msprop:Generator_RowEvArgName="DT_DeducteewithAddressRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="srno" msprop:Generator_ColumnVarNameInTable="columnsrno" msprop:Generator_ColumnPropNameInRow="srno" msprop:Generator_ColumnPropNameInTable="srnoColumn" msprop:Generator_UserColumnName="srno" type="xs:string" minOccurs="0" />
+              <xs:element name="Deductee_Name" msprop:Generator_ColumnVarNameInTable="columnDeductee_Name" msprop:Generator_ColumnPropNameInRow="Deductee_Name" msprop:Generator_ColumnPropNameInTable="Deductee_NameColumn" msprop:Generator_UserColumnName="Deductee_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Nature_Name" msprop:Generator_ColumnVarNameInTable="columnNature_Name" msprop:Generator_ColumnPropNameInRow="Nature_Name" msprop:Generator_ColumnPropNameInTable="Nature_NameColumn" msprop:Generator_UserColumnName="Nature_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="PAN_NO" msprop:Generator_ColumnVarNameInTable="columnPAN_NO" msprop:Generator_ColumnPropNameInRow="PAN_NO" msprop:Generator_ColumnPropNameInTable="PAN_NOColumn" msprop:Generator_UserColumnName="PAN_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="aaddress" msprop:Generator_ColumnVarNameInTable="columnaaddress" msprop:Generator_ColumnPropNameInRow="aaddress" msprop:Generator_ColumnPropNameInTable="aaddressColumn" msprop:Generator_UserColumnName="aaddress" type="xs:string" minOccurs="0" />
+              <xs:element name="Mobile_No" msprop:Generator_ColumnVarNameInTable="columnMobile_No" msprop:Generator_ColumnPropNameInRow="Mobile_No" msprop:Generator_ColumnPropNameInTable="Mobile_NoColumn" msprop:Generator_UserColumnName="Mobile_No" type="xs:string" minOccurs="0" />
+              <xs:element name="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_UserColumnName="Email" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

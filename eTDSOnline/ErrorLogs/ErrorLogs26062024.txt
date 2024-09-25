@@ -1,0 +1,20 @@
+Time: 26/06/2024 06:01:31 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void ddlFinancialYear_OnTextChanged(System.Object, System.EventArgs)
+Filename: e:\Komal\OnlineTDS\18062024\eTDSOnline\MasterPages\MasterPage.master.cs
+Line: 258
+Column: 13
+Message: Thread was being aborted.
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at MasterPages_MasterPage.ddlFinancialYear_OnTextChanged(Object sender, EventArgs e) in e:\Komal\OnlineTDS\18062024\eTDSOnline\MasterPages\MasterPage.master.cs:line 254
+Source: mscorlib
+TargetSite: Void AbortInternal()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+

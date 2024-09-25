@@ -1,0 +1,15 @@
+Time: 17/01/2024 03:36:17 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void btnGenerateTextFile_Click(System.Object, System.EventArgs)
+Filename: d:\Saibex\TDS\11012024\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 1140
+Column: 13
+Message: Transaction (Process ID 114) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+StackTrace:    at BusinessLayer.BAL_EReturns_NonSalary.BAL_GenerateTextFile() in D:\Saibex\TDS\11012024\Buisnesslayer\BAL_EReturns_NonSalary.cs:line 150
+   at Admin_EReturns_NonSalary.btnGenerateTextFile_Click(Object sender, EventArgs e) in d:\Saibex\TDS\11012024\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 935
+Source: .Net SqlClient Data Provider
+TargetSite: System.Data.DataSet BAL_GenerateTextFile()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+

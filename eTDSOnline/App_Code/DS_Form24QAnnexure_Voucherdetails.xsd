@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_Form24QAnnexure_Voucherdetails" targetNamespace="http://tempuri.org/DS_Form24QAnnexure_Voucherdetails.xsd" xmlns:mstns="http://tempuri.org/DS_Form24QAnnexure_Voucherdetails.xsd" xmlns="http://tempuri.org/DS_Form24QAnnexure_Voucherdetails.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_Form24QAnnexure_Voucherdetails" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DS_Form24QAnnexure_Voucherdetails" msprop:Generator_UserDSName="DS_Form24QAnnexure_Voucherdetails">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DT_Form27QAnnexure_Voucherdetails" msprop:Generator_TableClassName="DT_Form27QAnnexure_VoucherdetailsDataTable" msprop:Generator_TableVarName="tableDT_Form27QAnnexure_Voucherdetails" msprop:Generator_TablePropName="DT_Form27QAnnexure_Voucherdetails" msprop:Generator_RowDeletingName="DT_Form27QAnnexure_VoucherdetailsRowDeleting" msprop:Generator_RowChangingName="DT_Form27QAnnexure_VoucherdetailsRowChanging" msprop:Generator_RowEvHandlerName="DT_Form27QAnnexure_VoucherdetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="DT_Form27QAnnexure_VoucherdetailsRowDeleted" msprop:Generator_UserTableName="DT_Form27QAnnexure_Voucherdetails" msprop:Generator_RowChangedName="DT_Form27QAnnexure_VoucherdetailsRowChanged" msprop:Generator_RowEvArgName="DT_Form27QAnnexure_VoucherdetailsRowChangeEvent" msprop:Generator_RowClassName="DT_Form27QAnnexure_VoucherdetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Srno" msprop:Generator_ColumnVarNameInTable="columnSrno" msprop:Generator_ColumnPropNameInRow="Srno" msprop:Generator_ColumnPropNameInTable="SrnoColumn" msprop:Generator_UserColumnName="Srno" type="xs:string" minOccurs="0" />
+              <xs:element name="PAN_NO" msprop:Generator_ColumnVarNameInTable="columnPAN_NO" msprop:Generator_ColumnPropNameInRow="PAN_NO" msprop:Generator_ColumnPropNameInTable="PAN_NOColumn" msprop:Generator_UserColumnName="PAN_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="Deductee_Name" msprop:Generator_ColumnVarNameInTable="columnDeductee_Name" msprop:Generator_ColumnPropNameInRow="Deductee_Name" msprop:Generator_ColumnPropNameInTable="Deductee_NameColumn" msprop:Generator_UserColumnName="Deductee_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Section" msprop:Generator_ColumnVarNameInTable="columnSection" msprop:Generator_ColumnPropNameInRow="Section" msprop:Generator_ColumnPropNameInTable="SectionColumn" msprop:Generator_UserColumnName="Section" type="xs:string" minOccurs="0" />
+              <xs:element name="Voucher_DT" msprop:Generator_ColumnVarNameInTable="columnVoucher_DT" msprop:Generator_ColumnPropNameInRow="Voucher_DT" msprop:Generator_ColumnPropNameInTable="Voucher_DTColumn" msprop:Generator_UserColumnName="Voucher_DT" type="xs:string" minOccurs="0" />
+              <xs:element name="Voucher_Amount" msprop:Generator_ColumnVarNameInTable="columnVoucher_Amount" msprop:Generator_ColumnPropNameInRow="Voucher_Amount" msprop:Generator_ColumnPropNameInTable="Voucher_AmountColumn" msprop:Generator_UserColumnName="Voucher_Amount" type="xs:string" minOccurs="0" />
+              <xs:element name="TDS_Amt" msprop:Generator_ColumnVarNameInTable="columnTDS_Amt" msprop:Generator_ColumnPropNameInRow="TDS_Amt" msprop:Generator_ColumnPropNameInTable="TDS_AmtColumn" msprop:Generator_UserColumnName="TDS_Amt" type="xs:string" minOccurs="0" />
+              <xs:element name="Surcharge_Amt" msprop:Generator_ColumnVarNameInTable="columnSurcharge_Amt" msprop:Generator_ColumnPropNameInRow="Surcharge_Amt" msprop:Generator_ColumnPropNameInTable="Surcharge_AmtColumn" msprop:Generator_UserColumnName="Surcharge_Amt" type="xs:string" minOccurs="0" />
+              <xs:element name="ECess_Amt" msprop:Generator_ColumnVarNameInTable="columnECess_Amt" msprop:Generator_ColumnPropNameInRow="ECess_Amt" msprop:Generator_ColumnPropNameInTable="ECess_AmtColumn" msprop:Generator_UserColumnName="ECess_Amt" type="xs:string" minOccurs="0" />
+              <xs:element name="Total_Tax_Amt" msprop:Generator_ColumnVarNameInTable="columnTotal_Tax_Amt" msprop:Generator_ColumnPropNameInRow="Total_Tax_Amt" msprop:Generator_ColumnPropNameInTable="Total_Tax_AmtColumn" msprop:Generator_UserColumnName="Total_Tax_Amt" type="xs:string" minOccurs="0" />
+              <xs:element name="Challan_Date" msprop:Generator_ColumnVarNameInTable="columnChallan_Date" msprop:Generator_ColumnPropNameInRow="Challan_Date" msprop:Generator_ColumnPropNameInTable="Challan_DateColumn" msprop:Generator_UserColumnName="Challan_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Reason" msprop:Generator_ColumnVarNameInTable="columnReason" msprop:Generator_ColumnPropNameInRow="Reason" msprop:Generator_ColumnPropNameInTable="ReasonColumn" msprop:Generator_UserColumnName="Reason" type="xs:string" minOccurs="0" />
+              <xs:element name="Certificate_No" msprop:Generator_ColumnVarNameInTable="columnCertificate_No" msprop:Generator_ColumnPropNameInRow="Certificate_No" msprop:Generator_ColumnPropNameInTable="Certificate_NoColumn" msprop:Generator_UserColumnName="Certificate_No" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_OtherSummaryDeductions_mothly_Summary" targetNamespace="http://tempuri.org/DS_OtherSummaryDeductions_mothly_Summary.xsd" xmlns:mstns="http://tempuri.org/DS_OtherSummaryDeductions_mothly_Summary.xsd" xmlns="http://tempuri.org/DS_OtherSummaryDeductions_mothly_Summary.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_OtherSummaryDeductions_mothly_Summary" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DS_OtherSummaryDeductions_mothly_Summary" msprop:Generator_UserDSName="DS_OtherSummaryDeductions_mothly_Summary">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DT_OtherSummaryDeductions_monthly_Summary" msprop:Generator_TableClassName="DT_OtherSummaryDeductions_monthly_SummaryDataTable" msprop:Generator_TableVarName="tableDT_OtherSummaryDeductions_monthly_Summary" msprop:Generator_TablePropName="DT_OtherSummaryDeductions_monthly_Summary" msprop:Generator_RowDeletingName="DT_OtherSummaryDeductions_monthly_SummaryRowDeleting" msprop:Generator_RowChangingName="DT_OtherSummaryDeductions_monthly_SummaryRowChanging" msprop:Generator_RowEvHandlerName="DT_OtherSummaryDeductions_monthly_SummaryRowChangeEventHandler" msprop:Generator_RowDeletedName="DT_OtherSummaryDeductions_monthly_SummaryRowDeleted" msprop:Generator_UserTableName="DT_OtherSummaryDeductions_monthly_Summary" msprop:Generator_RowChangedName="DT_OtherSummaryDeductions_monthly_SummaryRowChanged" msprop:Generator_RowEvArgName="DT_OtherSummaryDeductions_monthly_SummaryRowChangeEvent" msprop:Generator_RowClassName="DT_OtherSummaryDeductions_monthly_SummaryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="From_Type" msprop:Generator_ColumnVarNameInTable="columnFrom_Type" msprop:Generator_ColumnPropNameInRow="From_Type" msprop:Generator_ColumnPropNameInTable="From_TypeColumn" msprop:Generator_UserColumnName="From_Type" type="xs:string" minOccurs="0" />
+              <xs:element name="Section" msprop:Generator_ColumnVarNameInTable="columnSection" msprop:Generator_ColumnPropNameInRow="Section" msprop:Generator_ColumnPropNameInTable="SectionColumn" msprop:Generator_UserColumnName="Section" type="xs:string" minOccurs="0" />
+              <xs:element name="Voucher_Amount" msprop:Generator_ColumnVarNameInTable="columnVoucher_Amount" msprop:Generator_ColumnPropNameInRow="Voucher_Amount" msprop:Generator_ColumnPropNameInTable="Voucher_AmountColumn" msprop:Generator_UserColumnName="Voucher_Amount" type="xs:string" minOccurs="0" />
+              <xs:element name="TDS_Amt" msprop:Generator_ColumnVarNameInTable="columnTDS_Amt" msprop:Generator_ColumnPropNameInRow="TDS_Amt" msprop:Generator_ColumnPropNameInTable="TDS_AmtColumn" msprop:Generator_UserColumnName="TDS_Amt" type="xs:string" minOccurs="0" />
+              <xs:element name="Voucher_DT" msprop:Generator_ColumnVarNameInTable="columnVoucher_DT" msprop:Generator_ColumnPropNameInRow="Voucher_DT" msprop:Generator_ColumnPropNameInTable="Voucher_DTColumn" msprop:Generator_UserColumnName="Voucher_DT" type="xs:string" minOccurs="0" />
+              <xs:element name="Voucher_ID" msprop:Generator_ColumnVarNameInTable="columnVoucher_ID" msprop:Generator_ColumnPropNameInRow="Voucher_ID" msprop:Generator_ColumnPropNameInTable="Voucher_IDColumn" msprop:Generator_UserColumnName="Voucher_ID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

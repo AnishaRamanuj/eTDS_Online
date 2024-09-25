@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_Form24Q_Annexure" targetNamespace="http://tempuri.org/Ds_Form24Q_Annexure.xsd" xmlns:mstns="http://tempuri.org/Ds_Form24Q_Annexure.xsd" xmlns="http://tempuri.org/Ds_Form24Q_Annexure.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_Form24Q_Annexure" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="Ds_Form24Q_Annexure" msprop:Generator_UserDSName="Ds_Form24Q_Annexure">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DT_Form24Q_Annexure" msprop:Generator_TableClassName="DT_Form24Q_AnnexureDataTable" msprop:Generator_TableVarName="tableDT_Form24Q_Annexure" msprop:Generator_TablePropName="DT_Form24Q_Annexure" msprop:Generator_RowDeletingName="DT_Form24Q_AnnexureRowDeleting" msprop:Generator_RowChangingName="DT_Form24Q_AnnexureRowChanging" msprop:Generator_RowEvHandlerName="DT_Form24Q_AnnexureRowChangeEventHandler" msprop:Generator_RowDeletedName="DT_Form24Q_AnnexureRowDeleted" msprop:Generator_UserTableName="DT_Form24Q_Annexure" msprop:Generator_RowChangedName="DT_Form24Q_AnnexureRowChanged" msprop:Generator_RowEvArgName="DT_Form24Q_AnnexureRowChangeEvent" msprop:Generator_RowClassName="DT_Form24Q_AnnexureRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Srno" msprop:Generator_ColumnVarNameInTable="columnSrno" msprop:Generator_ColumnPropNameInRow="Srno" msprop:Generator_ColumnPropNameInTable="SrnoColumn" msprop:Generator_UserColumnName="Srno" type="xs:string" minOccurs="0" />
+              <xs:element name="Challan_No" msprop:Generator_ColumnVarNameInTable="columnChallan_No" msprop:Generator_ColumnPropNameInRow="Challan_No" msprop:Generator_ColumnPropNameInTable="Challan_NoColumn" msprop:Generator_UserColumnName="Challan_No" type="xs:string" minOccurs="0" />
+              <xs:element name="Bank_Bsrcode" msprop:Generator_ColumnVarNameInTable="columnBank_Bsrcode" msprop:Generator_ColumnPropNameInRow="Bank_Bsrcode" msprop:Generator_ColumnPropNameInTable="Bank_BsrcodeColumn" msprop:Generator_UserColumnName="Bank_Bsrcode" type="xs:string" minOccurs="0" />
+              <xs:element name="PAN_No" msprop:Generator_ColumnVarNameInTable="columnPAN_No" msprop:Generator_ColumnPropNameInRow="PAN_No" msprop:Generator_ColumnPropNameInTable="PAN_NoColumn" msprop:Generator_UserColumnName="PAN_No" type="xs:string" minOccurs="0" />
+              <xs:element name="FirstName" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_UserColumnName="FirstName" type="xs:string" minOccurs="0" />
+              <xs:element name="Section" msprop:Generator_ColumnVarNameInTable="columnSection" msprop:Generator_ColumnPropNameInRow="Section" msprop:Generator_ColumnPropNameInTable="SectionColumn" msprop:Generator_UserColumnName="Section" type="xs:string" minOccurs="0" />
+              <xs:element name="Salary_Date" msprop:Generator_ColumnVarNameInTable="columnSalary_Date" msprop:Generator_ColumnPropNameInRow="Salary_Date" msprop:Generator_ColumnPropNameInTable="Salary_DateColumn" msprop:Generator_UserColumnName="Salary_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Employee_Salary" msprop:Generator_ColumnVarNameInTable="columnEmployee_Salary" msprop:Generator_ColumnPropNameInRow="Employee_Salary" msprop:Generator_ColumnPropNameInTable="Employee_SalaryColumn" msprop:Generator_UserColumnName="Employee_Salary" type="xs:string" minOccurs="0" />
+              <xs:element name="TDS_Amt" msprop:Generator_ColumnVarNameInTable="columnTDS_Amt" msprop:Generator_ColumnPropNameInRow="TDS_Amt" msprop:Generator_ColumnPropNameInTable="TDS_AmtColumn" msprop:Generator_UserColumnName="TDS_Amt" type="xs:string" minOccurs="0" />
+              <xs:element name="sur" msprop:Generator_ColumnVarNameInTable="columnsur" msprop:Generator_ColumnPropNameInRow="sur" msprop:Generator_ColumnPropNameInTable="surColumn" msprop:Generator_UserColumnName="sur" type="xs:string" minOccurs="0" />
+              <xs:element name="ECess" msprop:Generator_ColumnVarNameInTable="columnECess" msprop:Generator_ColumnPropNameInRow="ECess" msprop:Generator_ColumnPropNameInTable="ECessColumn" msprop:Generator_UserColumnName="ECess" type="xs:string" minOccurs="0" />
+              <xs:element name="ttds" msprop:Generator_ColumnVarNameInTable="columnttds" msprop:Generator_ColumnPropNameInRow="ttds" msprop:Generator_ColumnPropNameInTable="ttdsColumn" msprop:Generator_UserColumnName="ttds" type="xs:string" minOccurs="0" />
+              <xs:element name="Challan_Date" msprop:Generator_ColumnVarNameInTable="columnChallan_Date" msprop:Generator_ColumnPropNameInRow="Challan_Date" msprop:Generator_ColumnPropNameInTable="Challan_DateColumn" msprop:Generator_UserColumnName="Challan_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Certificate_No" msprop:Generator_ColumnVarNameInTable="columnCertificate_No" msprop:Generator_ColumnPropNameInRow="Certificate_No" msprop:Generator_ColumnPropNameInTable="Certificate_NoColumn" msprop:Generator_UserColumnName="Certificate_No" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,23 @@
+﻿body 
+{
+    font-family: verdana;
+	font-size: 12px;
+	margin: 0;
+}
+
+.main
+{
+	width: 1204px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto;
+}
+.top
+{
+	width: 1204px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto;
+}

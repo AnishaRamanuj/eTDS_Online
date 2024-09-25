@@ -1,0 +1,15 @@
+Time: 15/01/2024 03:55:39 PM
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Name: Void check4Validation_26Q()
+Filename: d:\Saibex\TDS\11012024\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs
+Line: 398
+Column: 13
+Message: Transaction (Process ID 55) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+StackTrace:    at BusinessLayer.BAL_EReturns_NonSalary.BAL_GetNonSalaryEreturnsDetails() in D:\Saibex\TDS\11012024\Buisnesslayer\BAL_EReturns_NonSalary.cs:line 52
+   at Admin_EReturns_NonSalary.check4Validation_26Q() in d:\Saibex\TDS\11012024\eTDSOnline\Admin\EReturns_NonSalary.aspx.cs:line 266
+Source: .Net SqlClient Data Provider
+TargetSite: System.Data.DataSet BAL_GetNonSalaryEreturnsDetails()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
